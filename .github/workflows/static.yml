@@ -36,7 +36,7 @@ jobs:
       - name: build pages
         run: |
           mkdir docs/
-          mv build/* docs/
+          mv build/ docs/
           
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
