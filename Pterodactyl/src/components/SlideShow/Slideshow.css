@@ -1,0 +1,42 @@
+.slideshow-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px; /* Adjust the maximum height of the images as needed */
+    margin: 0 auto;
+  }
+  
+.carousel .slide img {
+  max-width: 100%;
+  height: auto;
+  width: auto !important;
+  margin: 0 auto;
+}
+  
+.slideshow-container {
+  text-align: center;
+}
+
+.slideshow-heading {
+  font-weight: bold;
+  font-size: 50px; /* Adjust the font size as needed */
+  margin-bottom: 1rem;
+}
+
+
+.indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* Make the indicators round */
+  background-color: #999;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #333;
+}
+
+.container {
+  padding-bottom: 25px; /* Add space below the buttons */
+}
