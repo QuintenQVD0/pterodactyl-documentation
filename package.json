@@ -33,7 +33,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-responsive-carousel": "^3.2.23",
-    "remark-plugin-code-snippets": "^1.0.0-alpha.4"
+    "remark-plugin-code-snippets": "^1.0.0-alpha.4",
+    "trim": ">=0.0.3",
+    "got": ">=11.8.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "2.4.1"
