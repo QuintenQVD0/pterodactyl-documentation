@@ -23,8 +23,7 @@ this software on an OpenVZ based system you will &mdash; most likely &mdash; not
 
 | Operating System | Version |     Supported      | Notes                                                       |
 |------------------|---------|:------------------:|-------------------------------------------------------------|
-| **Ubuntu**       | 18.04   | :white_check_mark: | Documentation written assuming Ubuntu 18.04 as the base OS. |
-|                  | 20.04   | :white_check_mark: |                                                             |
+| **Ubuntu**       | 20.04   | :white_check_mark: | Documentation written assuming Ubuntu 20.04 as the base OS. |
 |                  | 22.04   | :white_check_mark: |                                                             |
 |                  | 22.04   | :white_check_mark: | MariaDB can be installed without the repo setup script.     |
 | **CentOS**       | 7       | :white_check_mark: | Extra repos are required.                                   |
@@ -65,9 +64,6 @@ curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
 
 # Update repositories list
 apt update
-
-# Add universe repository if you are on Ubuntu 18.04
-apt-add-repository universe
 
 # Install Dependencies
 apt -y install php8.1 php8.1-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip git redis-server
