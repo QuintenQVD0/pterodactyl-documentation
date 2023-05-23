@@ -66,7 +66,7 @@ your services without provocation.
 Advertising commercial services within your username or display name on Discord is forbidden.
 :::
 
-[Sponsors](/project/about.html#sponsors) at the silver tier and higher are exempt from this rule.
+[Sponsors](./about.md#sponsors) at the silver tier and higher are exempt from this rule.
 
 ### No Mention or Ping Spam
 Please, do not direct message any administrative, development, or notable community members without first
