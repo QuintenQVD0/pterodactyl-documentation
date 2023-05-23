@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpterodactyl=self.webpackChunkpterodactyl||[]).push([[95],{3769:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);
