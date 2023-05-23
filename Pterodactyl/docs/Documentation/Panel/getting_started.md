@@ -182,7 +182,7 @@ chown -R www-data:www-data /var/www/pterodactyl/*
 # If using NGINX on CentOS:
 chown -R nginx:nginx /var/www/pterodactyl/*
 
-# If using Apache on CentOS
+# If using Apache on CentOS:
 chown -R apache:apache /var/www/pterodactyl/*
 ```
 
