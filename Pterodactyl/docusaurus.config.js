@@ -121,7 +121,7 @@ const config = {
               },
               {
                 label: 'Sponsor',
-                href: 'https://github.com/sponsors/DaneEveritt',
+                href: 'https://github.com/sponsors/matthewpi',
               },
               {
                 label: 'Donate',
