@@ -35,11 +35,11 @@ jobs:
         
       - name: build pages
         run: |
-          mkdir docs/
-          mv build/ docs/
+          mkdir dev/
+          mv build/* dev/
           
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs
+          publish_dir: dev
