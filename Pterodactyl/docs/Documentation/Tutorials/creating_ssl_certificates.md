@@ -1,9 +1,12 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Creating SSL Certificates
 
 This tutorial briefly covers creating new SSL certificates for your panel and wings.
 
-:::: tabs
-::: tab "Method 1: Certbot"
+<Tabs>
+  <TabItem value="Method 1: Certbot" label="Method 1: Certbot" default>
 To begin, we will install certbot, a simple script that automatically renews our certificates and allows much
 easier creation of them. The command below is for Ubuntu distributions, but you can always check [Certbot's official
 site](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's
@@ -94,9 +97,8 @@ You may also need to restart Wings as not every service is able to automatically
 ```bash
 systemctl restart wings
 ```
-
-:::
-::: tab "Method 2: acme.sh (using Cloudflare API)"
+  </TabItem>
+  <TabItem value="Method 2: acme.sh" label="Method 2: acme.sh">
 This is for advanced users, whose server systems do not have access to port 80. The command below is for Ubuntu distributions and CloudFlare API (you may google for other APIs for other DNS providers), but you can always check [acme.sh's official site](https://github.com/Neilpang/acme.sh) for installation instructions.
 
 ``` bash
@@ -105,7 +107,7 @@ curl https://get.acme.sh | sh
 
 ### Obtaining CloudFlare API Key
 
-After installing acme.sh, we need to fetch a CloudFlare API key. Please make sure that a DNS record (A or CNAME record) is pointing to your target node, and set the cloud to grey (bypassing CloudFlare proxy). Then go to My Profile > API keys and on Global API Key subtab, click on "view", enter your CloudFlare password, and copy the API key to clipboard.
+After installing acme.sh, we need to fetch a CloudFlare API key. On Cloudfare's website, select your domain, then on the right side, copy your "Zone ID" and "Account ID" then click on "Get your API token", click on "Create Token" > select the template "Edit zone DNS" > select the scope of "Zone Ressources" and then click on "Continue to summary", copy your token.
 
 ### Creating a Certificate
 
@@ -118,8 +120,9 @@ sudo mkdir /etc/letsencrypt/live/example.com
 After installing acme.sh and obtaining CloudFlare API key, we need to then generate a certificate. First input the CloudFlare API credentials.
 
 ```bash
-export CF_Key="Your_CloudFlare_API_Key"
-export CF_Email="Your_CloudFlare_Account@example.com"
+export CF_Token="Your_CloudFlare_API_Key"
+export CF_Account_ID="Your_CloudFlare_Account_ID"
+export CF_Zone_ID="Your_CloudFlare_Zone_ID"
 
 ```
 
@@ -138,6 +141,5 @@ After running the script for the first time, it will be added to the crontab aut
 ```bash
 sudo crontab -e
 ```
-
-:::
-::::
+  </TabItem>
+</Tabs>
