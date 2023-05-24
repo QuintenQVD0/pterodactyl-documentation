@@ -1,51 +1,27 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Build static
-
+name: 'Deploy to GitHub Pages'
 on:
-  push:
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  workflow_call:
+  push:
+    branches:
+      - 'main'
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
-    #if: ${{ github.event.pull_request.merged }}
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    name: 'Deploy'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 'Checkout'
         uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: 'Setup Node'
+        uses: actions/setup-node@v3
         with:
           node-version: 16
-    
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Build
-        run: yarn build
-        
-      - name: build pages
+          cache: yarn
+      - name: 'Deploy to GitHub Pages'
         run: |
-          mkdir dev/
-          mv build/* dev/
-          zip -r myfiles.zip dev/
-
-      - uses: actions/upload-artifact@v3
-        with:
-          name: myfiles.zip
-          path: myfiles.zip   
-
-      - name: deploy
-        run: |
-          git config --global user.email "josdekurk@gmail.com"
-          USE_SSH=true yarn deploy
-
+          export NODE_OPTIONS="--max_old_space_size=4096"
+          git config --global user.email "action@github.com"
+          git config --global user.name "actions-user"
+          yarn
+          yarn deploy
