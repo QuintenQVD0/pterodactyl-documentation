@@ -45,5 +45,7 @@ jobs:
           path: myfiles.zip   
 
       - name: deploy
-        run: USE_SSH=true yarn deploy
+        run: |
+          git config --global user.email "josdekurk@gmail.com"
+          USE_SSH=true yarn deploy
 
