@@ -102,7 +102,7 @@ const config = {
               {
                 html: `
                 <a>
-                  <img src="@site/static/img/banner_logo.png" alt="" width="300" height="72" />
+                  <img src="img/banner_logo.png" alt="" width="300" height="72" />
                 </a>
                 <p>
                 Since 2015 Pterodactyl® has been delivering robust, performant, and secure software that allows individuals, networks, and hosting companies to run game servers at scale; easily. Best of all? No exorbitant monthly costs.<br /><br />
@@ -135,7 +135,7 @@ const config = {
               {
                 html: `
                 <a href="https://discord.gg/pterodactyl" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-                  <img src="@site/static/img/discord.png" alt="" width="280" height="85" />
+                  <img src="img/discord.png" alt="" width="280" height="85" />
                 </a>
               `,
               },
