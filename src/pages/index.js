@@ -30,17 +30,17 @@ function HomepageHeader() {
 }
 
 const images = [
-  '@site/static/img/screenshot-1.png',
-  '@site/static/img/screenshot-2.png',
-  '@site/static//img/screenshot-3.png',
-  '@site/static//img/screenshot-4.png',
-  '@site/static//img/screenshot-5.png',
-  '@site/static//img/screenshot-6.png',
-  '@site/static/img/screenshot-7.png',
-  '@site/static/img/screenshot-8.png',
-  '@site/static/img/screenshot-9.png',
-  '@site/static/img/screenshot-10.png',
-  '@site/static/img/screenshot-11.png',
+  'img/screenshot-1.png',
+  'img/screenshot-2.png',
+  'img/screenshot-3.png',
+  'img/screenshot-4.png',
+  'img/screenshot-5.png',
+  'img/screenshot-6.png',
+  'img/screenshot-7.png',
+  'img/screenshot-8.png',
+  'img/screenshot-9.png',
+  'img/screenshot-10.png',
+  'img/screenshot-11.png',
 ];
 
 export default function Home() {
