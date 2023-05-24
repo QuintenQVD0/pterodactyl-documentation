@@ -45,5 +45,5 @@ jobs:
           path: myfiles.zip   
 
       - name: deploy
-        run: GIT_USER=QuintenQVD0 yarn deploy
+        run: USE_SSH=true yarn deploy
 
