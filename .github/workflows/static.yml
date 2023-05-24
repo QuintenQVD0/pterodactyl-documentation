@@ -44,4 +44,6 @@ jobs:
           name: myfiles.zip
           path: myfiles.zip   
 
+      - name: deploy
+        run: GIT_USER=QuintenQVD0 yarn deploy
 
