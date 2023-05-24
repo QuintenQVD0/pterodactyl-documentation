@@ -37,9 +37,11 @@ jobs:
         run: |
           mkdir dev/
           mv build/* dev/
-          
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+          zip -r myfiles.zip dev/
+
+      - uses: actions/upload-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dev
+          name: myfiles.zip
+          path: myfiles.zip   
+
+
