@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://pterodactyl.io',
+  url: 'https://quintenqvd0.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'QuintenQVD0', // Usually your GitHub org/user name.
-  projectName: 'Pterodactyl', // Usually your repo name.
+  projectName: 'pterodactyl-documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -43,7 +43,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/pterodactyl/documentation',
+            'https://github.com/QuintenQVD0/pterodactyl-documentation',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
