@@ -30,17 +30,17 @@ function HomepageHeader() {
 }
 
 const images = [
-  'img/screenshot-1.png',
-  'img/screenshot-2.png',
-  'img/screenshot-3.png',
-  'img/screenshot-4.png',
-  'img/screenshot-5.png',
-  'img/screenshot-6.png',
-  'img/screenshot-7.png',
-  'img/screenshot-8.png',
-  'img/screenshot-9.png',
-  'img/screenshot-10.png',
-  'img/screenshot-11.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-1.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-2.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-3.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-4.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-5.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-6.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-7.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-8.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-9.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-10.png',
+  'https://cdn.pterodactyl.io/site-assets/carousel/screenshot-11.png',
 ];
 
 export default function Home() {
