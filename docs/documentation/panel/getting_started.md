@@ -106,7 +106,7 @@ Now that all of the files have been downloaded we need to configure some core as
 :::tip Database Configuration
 You will need a database setup and a user with the correct permissions created for that database before
 continuing any further. See below to create a user and database for your Pterodactyl panel quickly. To find more detailed information
-please have a look at [Setting up MySQL](./../Tutorials/mysql_setup.md).
+please have a look at [Setting up MySQL](./../tutorials/mysql_setup.md).
 
 ```sql
 mysql -u root -p

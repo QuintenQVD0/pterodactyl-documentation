@@ -127,7 +127,7 @@ Alternatively, you can click on the Generate Token button, copy the bash command
 ![example image of wings configuration](./../../../static/img/wings_configuration_example.png)
 
 :::caution
-When your Panel is using SSL, the Wings must also have one created for its FQDN. See [Creating SSL Certificates](./../Tutorials/creating_ssl_certificates.md) documentation page for how to create these certificates before continuing.
+When your Panel is using SSL, the Wings must also have one created for its FQDN. See [Creating SSL Certificates](./../tutorials/creating_ssl_certificates.md) documentation page for how to create these certificates before continuing.
 :::
 
 ### Starting Wings

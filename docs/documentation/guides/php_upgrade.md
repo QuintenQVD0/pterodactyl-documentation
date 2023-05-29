@@ -69,4 +69,4 @@ a2enmod php8.1
 </Tabs>
     
 
-### [Return to the 1.X.X Upgrade Guide](./../Panel/updating.md)
+### [Return to the 1.X.X Upgrade Guide](./../panel/updating.md)

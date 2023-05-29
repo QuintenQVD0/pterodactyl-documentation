@@ -1,6 +1,6 @@
 # Legacy Upgrades
 This upgrade guide is for **upgrading from 0.7.X to 1.3.x**. If you are trying to do an upgrade on a 1.X Panel
-please [use this guide instead](../Panel/updating.md). During this upgrade process you will have some periods
+please [use this guide instead](../panel/updating.md). During this upgrade process you will have some periods
 of Panel unavailability, however none of the underlying game server instances will be stopped.
 
 ## Enter Maintenance Mode
@@ -18,7 +18,7 @@ reference the list below to ensure you have all of the required versions.
 
 * PHP `8.0` or `8.1` (recommended) with the following extensions: `cli`, `openssl`, `gd`, `mysql`, `PDO`, `mbstring`,
   `tokenizer`, `bcmath`, `xml` or `dom`, `curl`, `zip`, and `fpm` if you are planning to use nginx. See our guide
-  for [Upgrading PHP](./../Guides/php_upgrade.mdx) for details.
+  for [Upgrading PHP](./../guides/php_upgrade.md) for details.
 * Composer v2 (`composer self-update --2`)
 
 :::caution Nginx

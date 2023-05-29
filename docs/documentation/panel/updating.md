@@ -43,7 +43,7 @@ will be the only supported version in 1.12 and beyond.
 
 **Before continuing**, please ensure that your system and web server configuration has been upgraded to at least PHP 8.0 by running `php -v` and Composer 2 by running `composer --version`. You
 should see an output similar to the result below. If you do not see at least PHP 8.0 and Composer 2, you will need to upgrade by following
-our [PHP Upgrade Guide](./../Guides/php_upgrade.mdx) and return to this documentation afterward.
+our [PHP Upgrade Guide](./../guides/php_upgrade.md) and return to this documentation afterward.
 
 ```
 vagrant@pterodactyl:~/app$ php -v
@@ -169,4 +169,4 @@ Since 1.11, Pterodactyl will collect anonymous telemetry to help us better under
 software is being used. To learn more about this feature and to opt-out, please see our [Telemetry](./additional_configuration.md#telemetry)
 documentation. Remember to continue with the rest of the upgrade.
 
-[Final Step: Upgrade Wings](./../Wings/upgrading.md)
+[Final Step: Upgrade Wings](./../wings/upgrading.md)
