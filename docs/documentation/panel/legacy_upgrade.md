@@ -130,4 +130,4 @@ control plane written in Go. This new system is significantly faster, easier to 
 need to do is install a single binary on your system and configure it to run on boot. **You cannot use the old Node.js
 Daemon to run servers with Pterodactyl Panel 1.0.**
 
-Please see [Migrating to Wings](./../Wings/migrating.md) for instructions.
+Please see [Migrating to Wings](./../wings/migrating.md) for instructions.
