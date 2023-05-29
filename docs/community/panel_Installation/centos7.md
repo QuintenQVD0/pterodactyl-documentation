@@ -1,13 +1,15 @@
-# CentOS 8, Rocky Linux 8, AlmaLinux 8
-In this guide we will install Pterodactyl v1.X — including all of it's dependencies — and configure our webserver to serve it using SSL.
+# CentOS 7
+In this guide we will install Pterodactyl v1.X — including all of it's dependencies — and configure our webserver
+to serve it using SSL.
 
 
 :::tip
-This guide is based off the [official installation documentation](../../Documentation/Panel/getting_started.md) but is tailored specifically for Enterprise Linux 8.
+This guide is based off the [official installation documentation](../../documentation/panel/getting_started.md) but is tailored specifically for CentOS 7.
 :::
 
 ## Install Requirements and Additional Utilities
-We will install all of Pterodactyl's [required](../../Documentation/Panel/getting_started.md#dependencies) dependencies and a few aditional utilities.
+We will install all of Pterodactyl's [required](../../documentation/panel/getting_started.md#dependencies) dependencies and a few aditional utilities.
+
 
 :::tip
 If you run `sestatus` and it shows `SELinux status: enabled` you should install the following packages for later
@@ -15,12 +17,27 @@ If you run `sestatus` and it shows `SELinux status: enabled` you should install 
 
 ### SELinux tools
 ```bash
-dnf install -y policycoreutils selinux-policy selinux-policy-targeted setroubleshoot-server setools setools-console mcstrans
+yum install -y policycoreutils policycoreutils-python selinux-policy selinux-policy-targeted libselinux-utils setroubleshoot-server setools setools-console mcstrans
 ```
 
 ### MariaDB
 ```bash
-dnf install -y mariadb mariadb-server
+## Install Repos
+cat <<EOF > /etc/yum.repos.d/mariadb.repo
+# MariaDB 10.5 CentOS repository list - created 2017-07-14 12:40 UTC
+# http://downloads.mariadb.org/mariadb/repositories/
+[mariadb]
+name = MariaDB
+baseurl = http://yum.mariadb.org/10.5/centos7-amd64
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1
+EOF
+
+## Get yum updates
+yum update -y
+
+## Install MariaDB 10.5
+yum install -y MariaDB-common MariaDB-server
 
 ## Start maraidb
 systemctl start mariadb
@@ -32,20 +49,22 @@ We recommend the remi repo to get the latest php packages.
 
 ```bash
 ## Install Repos
-dnf install epel-release
-dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
-dnf module enable php:remi-8.0
+yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum -y install https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+yum install -y yum-utils
+yum-config-manager --disable 'remi-php*'
+yum-config-manager --enable remi-php80
 
-## Get dnf updates
-dnf update -y
+## Get yum updates
+yum update -y
 
 ## Install PHP 8.0
-dnf install -y php php-{common,fpm,cli,json,mysqlnd,gd,mbstring,pdo,zip,bcmath,dom,opcache}
+yum install -y php php-{common,fpm,cli,json,mysqlnd,mcrypt,gd,mbstring,pdo,zip,bcmath,dom,opcache}
 ```
 
 ### Composer
 ```bash
-dnf install -y zip unzip tar # Required for Composer
+yum install -y zip unzip # Required for Composer
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 ```
 
@@ -54,7 +73,7 @@ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 
 ### Nginx
 ```bash
-dnf install -y nginx
+yum install -y nginx
 
 firewall-cmd --add-service=http --permanent
 firewall-cmd --add-service=https --permanent 
@@ -63,7 +82,7 @@ firewall-cmd --reload
 
 ### Redis
 ```bash
-dnf install -y redis
+yum install -y --enablerepo=remi redis
 
 systemctl start redis
 systemctl enable redis
@@ -109,7 +128,7 @@ All done! If you've completed all of the above steps, your MariaDB
 installation should now be secure.
 
 #### Adding MariaDB user
-To add your first user to the database, see our tutorial on [setting up MySQL](./../../Documentation/Tutorials/mysql_setup.md).
+To add your first user to the database, see our tutorial on [setting up MySQL](./../../documentation/tutorials/mysql_setup.md).
 
 ### Setup PHP
 Place the contents below in a file inside the `/etc/php-fpm.d` folder. The file can be named anything, but a good standard is `www-pterodactyl.conf`. This config will match the nginx config later in the guide.
@@ -123,7 +142,7 @@ systemctl start php-fpm
 ```
 
 ### Nginx
-Please check our [tutorial](./../../Documentation/Tutorials/creating_ssl_certificates.md) on generating SSL certificates for more information.
+Please check our [tutorial](./../../documentation/tutorials/creating_ssl_certificates.md) on generating SSL certificates for more information.
 
 #### SSL Configuration
 <<< @/.snippets/webservers/nginx-centos.conf{5,11,26-27}
@@ -133,4 +152,4 @@ The default Redis install is perfectly fine for the panel. If you have Redis alr
 [running another Redis instance](https://community.pivotal.io/s/article/How-to-setup-and-run-multiple-Redis-server-instances-on-a-Linux-host).
 
 ## Installing the Panel
-Excellent, we now have all of the required dependencies installed and configured. From here, follow the [official Panel installation documentation](../../Documentation/Panel/getting_started.md#download-files).
+Excellent, we now have all of the required dependencies installed and configured. From here, follow the [official Panel installation documentation](../../documentation/panel/getting_started.md#download-files).

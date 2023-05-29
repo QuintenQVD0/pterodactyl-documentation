@@ -142,7 +142,7 @@ const config = {
             ],
           },
         ],
-        copyright: `MIT Licensed | Pterodactyl © 2015-${new Date().getFullYear()} Dane Everitt & contributors`,
+        copyright: `MIT Licensed | Pterodactyl © 2015-${new Date().getFullYear()} Dane Everitt & contributors. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

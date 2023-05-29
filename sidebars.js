@@ -23,31 +23,31 @@ const sidebars = {
       type: 'category',
       label: 'Project Information',
       collapsed: false,
-      items: ['Documentation/Project Information/introduction', 'Documentation/Project Information/about', 'Documentation/Project Information/terms', 'Documentation/Project Information/community'],
+      items: ['documentation/project/introduction', 'documentation/project/about', 'documentation/project/terms', 'documentation/project/community'],
     },
     {
       type: 'category',
       label: 'Panel',
       collapsed: false,
-      items: ['Documentation/Panel/getting_started', 'Documentation/Panel/webserver_configuration', 'Documentation/Panel/additional_configuration', 'Documentation/Panel/updating', 'Documentation/Panel/troubleshooting', 'Documentation/Panel/legacy_upgrade'],
+      items: ['documentation/panel/getting_started', 'documentation/panel/webserver_configuration', 'documentation/panel/additional_configuration', 'documentation/panel/updating', 'documentation/panel/troubleshooting', 'documentation/panel/legacy_upgrade'],
     },
     {
       type: 'category',
       label: 'Wings',
       collapsed: false,
-      items: ['Documentation/Wings/installing', 'Documentation/Wings/upgrading', 'Documentation/Wings/migrating', 'Documentation/Wings/configuration']
+      items: ['documentation/wings/installing', 'documentation/wings/upgrading', 'documentation/wings/migrating', 'documentation/wings/configuration']
     },
     {
       type: 'category',
       label: 'Tutorials',
       collapsed: false,
-      items: ['Documentation/Tutorials/mysql_setup', 'Documentation/Tutorials/creating_ssl_certificates']
+      items: ['documentation/tutorials/mysql_setup', 'documentation/tutorials/creating_ssl_certificates']
     },
     {
       type: 'category',
       label: 'Guides',
       collapsed: false,
-      items: ['Documentation/Guides/mounts', 'Documentation/Guides/php_upgrade']
+      items: ['documentation/guides/mounts', 'documentation/guides/php_upgrade']
     }
   ],
   CommunitySidebar: [
@@ -55,43 +55,43 @@ const sidebars = {
       type: 'category',
       label: 'Community Guides',
       collapsed: false,
-      items: ['Community/Community Guides/about']
+      items: ['community/community_guides/about']
     },
     {
       type: 'category',
       label: 'Panel Installation',
       collapsed: false,
-      items: ['Community/Panel Installation/centos7', 'Community/Panel Installation/centos8', 'Community/Panel Installation/debian10', 'Community/Panel Installation/debian11']
+      items: ['community/panel_Installation/centos7', 'community/panel_Installation/centos8', 'community/panel_Installation/debian10', 'community/panel_Installation/debian11']
     },
     {
       type: 'category',
       label: 'Wings Installation',
       collapsed: false,
-      items: ['Community/Wings Installation/centos7', 'Community/Wings Installation/centos8', 'Community/Wings Installation/debian10', 'Community/Wings Installation/debian11']
+      items: ['community/wings_Installation/centos7', 'community/wings_Installation/centos8', 'community/wings_Installation/debian10', 'community/wings_Installation/debian11']
     },
     {
       type: 'category',
       label: 'Creating Eggs',
       collapsed: false,
-      items: ['Community/Creating Eggs/creating_a_custom_egg', 'Community/Creating Eggs/creating_a_custom_image']
+      items: ['community/creating_eggs/creating_a_custom_egg', 'community/creating_eggs/creating_a_custom_image']
     },
     {
       type: 'category',
       label: 'Game Configuration',
       collapsed: false,
-      items: ['Community/Game Configuration/minecraft']
+      items: ['community/game_configuration/minecraft']
     },
     {
       type: 'category',
       label: 'Tutorials',
       collapsed: false,
-      items: ['Community/Tutorials/add_node', 'Community/Tutorials/artisan']
+      items: ['community/tutorials/add_node', 'community/tutorials/artisan']
     },
     {
       type: 'category',
       label: 'Customization',
       collapsed: false,
-      items: ['Community/Customization/panel', 'Community/Customization/wings']
+      items: ['community/customization/panel', 'community/customization/wings']
     },
   ],
 };

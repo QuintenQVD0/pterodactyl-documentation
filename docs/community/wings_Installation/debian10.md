@@ -2,11 +2,11 @@
 In this guide we will install Pterodactyl's Wings v1.X — including all of it's dependencies — and configure it to use a SSL connection.
 
 :::tip
-This guide is based off the [official installation documentation](../../Documentation/Wings/installing.md) but is tailored specifically for Debian 10.
+This guide is based off the [official installation documentation](../../documentation/wings/installing.md) but is tailored specifically for Debian 10.
 :::
 
 ## Install Requirements
-We will first begin by installing all of Wings' [required](../../Documentation/Wings/installing.md#dependencies) dependencies.
+We will first begin by installing all of Wings' [required](../../documentation/wings/installing.md#dependencies) dependencies.
 
 ### Docker
 
@@ -30,4 +30,4 @@ systemctl start docker
 ```
 
 ## Installing Wings
-Great, now all of the dependencies have been dealt with. From here follow the [official Wings installation documentation](../../Documentation/Wings/installing.md#enabling-swap).
+Great, now all of the dependencies have been dealt with. From here follow the [official Wings installation documentation](../../documentation/wings/installing.md#enabling-swap).
