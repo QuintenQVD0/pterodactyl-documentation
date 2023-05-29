@@ -19,7 +19,7 @@ jobs:
           node-version: 16
           cache: yarn
       - name: 'Use SSH agent'
-        uses: webfactory/ssh-agent@v0.5.0
+        uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: 'Deploy to GitHub Pages'
