@@ -1,4 +1,7 @@
+import TOCInline from '@theme/TOCInline';
 # Setting up MySQL
+
+<TOCInline toc={toc} />
 
 ## Creating a database for Pterodactyl
 MySQL is a core component of Pterodactyl Panel but it can be confusing to setup and use if you've never done so before.

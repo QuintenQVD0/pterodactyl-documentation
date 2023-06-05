@@ -1,4 +1,7 @@
+import TOCInline from '@theme/TOCInline';
 # About
+
+<TOCInline toc={toc} />
 
 ## Core Project Team
 

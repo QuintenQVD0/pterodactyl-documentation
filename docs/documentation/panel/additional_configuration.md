@@ -1,5 +1,7 @@
+import TOCInline from '@theme/TOCInline';
 # Additional Configuration
 
+<TOCInline toc={toc} />
 
 ## Backups
 

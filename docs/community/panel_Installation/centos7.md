@@ -1,7 +1,9 @@
+import TOCInline from '@theme/TOCInline';
 # CentOS 7
 In this guide we will install Pterodactyl v1.X — including all of it's dependencies — and configure our webserver
 to serve it using SSL.
 
+<TOCInline toc={toc} />
 
 :::tip
 This guide is based off the [official installation documentation](../../documentation/panel/getting_started.md) but is tailored specifically for CentOS 7.

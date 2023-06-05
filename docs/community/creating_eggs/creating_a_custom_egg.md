@@ -1,9 +1,11 @@
+import TOCInline from '@theme/TOCInline';
 # Creating a Custom Egg
 :::warning
 You should not edit existing services or options that ship with the Panel. Each upgrade we push can make minor
 changes to these, and you'll lose any changes you've made.
 :::
 
+<TOCInline toc={toc} />
 
 The first thing you'll need to do is create a new service. In this case, the name and description speak for themselves
 in this case. The `Folder Name` _must be a unique name_ not being used by any other service, and should only

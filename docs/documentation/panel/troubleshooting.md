@@ -1,4 +1,7 @@
+import TOCInline from '@theme/TOCInline';
 # Troubleshooting
+
+<TOCInline toc={toc} />
 
 ## Reading Error Logs
 If you ever encounter an unexpected error with the Panel the first thing you will likely be asked for is the logs.
