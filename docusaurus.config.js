@@ -150,6 +150,10 @@ const config = {
       },
     }),
     plugins: [require.resolve('docusaurus-lunr-search')],
+    tableOfContents: {
+      minHeadingLevel: 0,
+      maxHeadingLevel: 0,
+    },
 };
 
 module.exports = config;
