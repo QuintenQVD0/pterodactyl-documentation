@@ -53,6 +53,7 @@ const config = {
   ],
 
   themeConfig:
+
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
@@ -143,6 +144,10 @@ const config = {
           },
         ],
         copyright: `MIT Licensed | Pterodactyl © 2015-${new Date().getFullYear()} Dane Everitt & contributors. Built with Docusaurus.`,
+        tableOfContents: {
+          minHeadingLevel: 0,
+          maxHeadingLevel: 0,
+        },
       },
       prism: {
         theme: lightCodeTheme,
@@ -150,10 +155,6 @@ const config = {
       },
     }),
     plugins: [require.resolve('docusaurus-lunr-search')],
-    tableOfContents: {
-      minHeadingLevel: 0,
-      maxHeadingLevel: 0,
-    },
 };
 
 module.exports = config;
