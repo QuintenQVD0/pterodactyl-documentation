@@ -1,4 +1,3 @@
-import TOCInline from '@theme/TOCInline'
 # Artisan CLI
 
 <TOCInline toc={toc} />

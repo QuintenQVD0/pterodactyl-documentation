@@ -1,4 +1,3 @@
-import TOCInline from '@theme/TOCInline'
 # Creating a New Node
 
 <TOCInline toc={toc} />

@@ -1,4 +1,3 @@
-import TOCInline from '@theme/TOCInline'
 # Getting Started
 
 <TOCInline toc={toc} />

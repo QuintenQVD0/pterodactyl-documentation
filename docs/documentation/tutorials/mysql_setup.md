@@ -1,4 +1,3 @@
-import TOCInline from '@theme/TOCInline'
 # Setting up MySQL
 
 <TOCInline toc={toc} />
