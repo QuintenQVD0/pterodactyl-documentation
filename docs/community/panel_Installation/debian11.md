@@ -1,4 +1,4 @@
-import TOCInline from '@theme/TOCInline';
+import TOCInline from '@theme/TOCInline'
 # Debian 11
 
 <TOCInline toc={toc} />

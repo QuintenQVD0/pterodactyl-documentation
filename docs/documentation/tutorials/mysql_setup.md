@@ -1,4 +1,4 @@
-import TOCInline from '@theme/TOCInline';
+import TOCInline from '@theme/TOCInline'
 # Setting up MySQL
 
 <TOCInline toc={toc} />

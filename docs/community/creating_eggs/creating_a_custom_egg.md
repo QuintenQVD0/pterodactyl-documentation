@@ -1,4 +1,4 @@
-import TOCInline from '@theme/TOCInline';
+import TOCInline from '@theme/TOCInline'
 # Creating a Custom Egg
 :::warning
 You should not edit existing services or options that ship with the Panel. Each upgrade we push can make minor
