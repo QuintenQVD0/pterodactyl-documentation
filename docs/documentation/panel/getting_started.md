@@ -24,7 +24,6 @@ this software on an OpenVZ based system you will &mdash; most likely &mdash; not
 | Operating System | Version |     Supported      | Notes                                                       |
 |------------------|---------|:------------------:|-------------------------------------------------------------|
 | **Ubuntu**       | 20.04   | :white_check_mark: | Documentation written assuming Ubuntu 20.04 as the base OS. |
-|                  | 22.04   | :white_check_mark: |                                                             |
 |                  | 22.04   | :white_check_mark: | MariaDB can be installed without the repo setup script.     |
 | **CentOS**       | 7       | :white_check_mark: | Extra repos are required.                                   |
 |                  | 8       | :white_check_mark: | Note that CentOS 8 is EOL. Use Rocky or Alma Linux.         |
