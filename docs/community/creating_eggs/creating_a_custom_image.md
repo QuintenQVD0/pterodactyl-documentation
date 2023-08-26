@@ -1,4 +1,3 @@
-import TOCInline from '@theme/TOCInline'
 # Creating a Custom Docker Image
 
 :::warning
@@ -6,9 +5,6 @@ This tutorial uses examples from our [`core:java`](https://github.com/pterodacty
 which can be found on GitHub. This tutorial also assumes some knowledge of [Docker](https://docker.io/), we suggest
 reading up if this all looks foreign to you.
 :::
-
-import TOCInline from '@theme/TOCInline';
-<TOCInline toc={toc} />
 
 ## Creating the Dockerfile
 

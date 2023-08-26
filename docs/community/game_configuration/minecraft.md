@@ -1,8 +1,4 @@
-import TOCInline from '@theme/TOCInline'
 # Minecraft
-
-import TOCInline from '@theme/TOCInline';
-<TOCInline toc={toc} />
 
 ## Configuring a Server Network (BungeeCord, Waterfall, HexaCord, etc.)
 

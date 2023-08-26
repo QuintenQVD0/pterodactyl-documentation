@@ -1,8 +1,4 @@
-import TOCInline from '@theme/TOCInline'
 # Creating a New Node
-
-import TOCInline from '@theme/TOCInline';
-<TOCInline toc={toc} />
 
 ## Location
 Head to the admin panel and click the Nodes tab on the left sidebar. After that, click 'Create New' on the

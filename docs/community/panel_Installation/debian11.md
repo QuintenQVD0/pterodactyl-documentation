@@ -1,8 +1,4 @@
-import TOCInline from '@theme/TOCInline'
 # Debian 11
-
-import TOCInline from '@theme/TOCInline';
-<TOCInline toc={toc} />
 
 :::tip
 This guide is based off the [official installation documentation](../../documentation/panel/getting_started.md) but is tailored specifically for Debian 11.

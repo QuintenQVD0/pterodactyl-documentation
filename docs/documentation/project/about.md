@@ -1,8 +1,5 @@
-import TOCInline from '@theme/TOCInline'
 # About
 
-import TOCInline from '@theme/TOCInline';
-<TOCInline toc={toc} />
 
 ## Core Project Team
 
