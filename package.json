@@ -28,7 +28,7 @@
     "docusaurus-lunr-search": "^2.4.2",
     "docusaurus-remark-plugin-codetabs": "^1.0.0-alpha.3",
     "docusaurus-remark-plugin-codetabs-snippets": "^1.0.0-alpha.1",
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.2",
     "got": ">=11.8.5",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
