@@ -43,7 +43,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/QuintenQVD0/pterodactyl-documentation/',
+            'https://github.com/QuintenQVD0/pterodactyl-documentation/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -135,7 +135,7 @@ const config = {
             items: [
               {
                 html: `
-                <a href="https://discord.gg/pterodactyl" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+                <a href="https://discord.gg/pterodactyl" target="_blank" rel="noreferrer noopener" aria-label="">
                   <img src="https://raw.githubusercontent.com/QuintenQVD0/pterodactyl-documentation/main/static/img/discord.png" alt="" width="280" height="85" />
                 </a>
               `,
