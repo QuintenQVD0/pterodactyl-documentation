@@ -126,7 +126,13 @@ reCAPTCHA can easily be disabled using the admin panel. In the Settings, select 
 If you cannot access your panel, you can modify the database directly using the following commands.
 
 ```sql
+# If using MariaDB (V11.0.0+)
+mariadb -u root -p
+
+# If using MySQL
 mysql -u root -p
+```
+```sql
 UPDATE panel.settings SET value = 'false' WHERE `key` = 'settings::recaptcha:enabled';
 ```
 
@@ -137,11 +143,18 @@ If possible you should use the panel to update your 2FA settings. If you can't a
 ### Disable 2FA requirement
 
 ```sql
+# If using MariaDB (V11.0.0+)
+mariadb -u root -p
+
+# If using MySQL
 mysql -u root -p
+```
+```sql
 UPDATE panel.settings SET value = 0 WHERE `key` = 'settings::pterodactyl:auth:2fa_required';
 ```
 
 ### Disable 2FA for a specific user
+
 
 Run the following command in your `/var/www/pterodactyl` directory.
 
