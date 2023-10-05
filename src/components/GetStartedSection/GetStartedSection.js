@@ -1,5 +1,5 @@
 import React from 'react';
-import './custom.css';
+import './GetStartedSection.css';
 
 const GetStartedSection = () => (
   <div className="section" style={{ backgroundColor: '#10529F', color: '#FFFFFF', textAlign: 'center' }}>
