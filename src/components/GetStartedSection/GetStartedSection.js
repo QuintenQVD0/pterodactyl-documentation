@@ -13,7 +13,7 @@ const GetStartedSection = () => (
           </a>
         </a>
         <a className="btn-container">
-          <a className="btn btn-primary rounded-full px-4 py-2" mr-2 href="https://discord.gg/pterodactyl" style={{ color: 'white' }}>
+          <a className="btn btn-primary rounded-full px-4 py-2 mr-2" href="https://discord.gg/pterodactyl" style={{ color: 'white' }}>
             Discord
           </a>
         </a>
