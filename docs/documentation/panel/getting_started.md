@@ -263,4 +263,4 @@ Since 1.11, Pterodactyl will collect anonymous telemetry to help us better under
 software is being used. To learn more about this feature and to opt-out, please see our [Telemetry](./additional_configuration.md#telemetry)
 documentation. Make sure to continue with the rest of the installation process.
 
-#### Next Step: [Webserver Configuration](./webserver_configuration)
+#### Next Step: [Webserver Configuration](./webserver_configuration.mdx)
