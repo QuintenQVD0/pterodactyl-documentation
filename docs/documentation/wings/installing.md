@@ -144,7 +144,7 @@ You may optionally add the `--debug` flag to run Wings in debug mode.
 Running Wings in the background is a simple task, just make sure that it runs without errors before doing
 this. Place the contents below in a file called `wings.service` in the `/etc/systemd/system` directory.
 
-```text
+```text title="/etc/systemd/system/wings.service"
 [Unit]
 Description=Pterodactyl Wings Daemon
 After=docker.service
