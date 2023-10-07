@@ -18,7 +18,7 @@ APP_BACKUP_DRIVER=wings
 
 Do note that, when using local storage via Wings, the destination for backups is set in Wings' `config.yml` with the following setting key:
 
-```yml
+```yml title="/etc/pterodactyl/config.yml"
 system:
   backup_directory: /path/to/backup/storage
 ```
@@ -80,7 +80,7 @@ the chances are that something like `TRUSTED_PROXIES=127.0.0.1` will work for yo
 
 For Pterodactyl to properly respond to an NGINX reverse proxy, the NGINX `location` config must contain the following lines:
 
-```Nginx
+```nginx
 proxy_set_header X-Real-IP $remote_addr;
 proxy_set_header Host $host;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -95,7 +95,7 @@ proxy_request_buffering off;
 If you're using Cloudflare's Flexible SSL you should set `TRUSTED_PROXIES` to contain [their IP addresses](https://www.cloudflare.com/ips/).
 Below is an example of how to set this.
 
-```text
+```text title="/etc/pterodactyl/config.yml"
 TRUSTED_PROXIES=173.245.48.0/20,103.21.244.0/22,103.22.200.0/22,103.31.4.0/22,141.101.64.0/18,108.162.192.0/18,190.93.240.0/20,188.114.96.0/20,197.234.240.0/22,198.41.128.0/17,162.158.0.0/15,104.16.0.0/13,104.24.0.0/14,172.64.0.0/13,131.0.72.0/22
 ```
 

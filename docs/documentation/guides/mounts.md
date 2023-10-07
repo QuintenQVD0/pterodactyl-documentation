@@ -8,7 +8,7 @@ For security reasons it is not possible to mount directories on a node by defaul
 
 In the Wings configuration file (`/etc/pterodactyl/config.yml`) the `allowed_mounts` field is used to list mountable directories. The listed directories and all their subdirectories can be mounted.
 
-```yml
+```yml title="/etc/pterodactyl/config.yml"
 allowed_mounts:
 - /example
 ```
@@ -57,7 +57,7 @@ Mounts do not appear in the Panel's file manager, nor are they accessible via SF
 
 The example mount below is stored in the path `/var/lib/pterodactyl/mounts`, which we add to the Wings `config.yml`
 
-```yml
+```yml title="/etc/pterodactyl/config.yml"
 allowed_mounts:
   - /var/lib/pterodactyl/mounts
 ```

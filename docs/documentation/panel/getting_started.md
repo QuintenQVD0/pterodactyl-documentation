@@ -213,7 +213,7 @@ for sending emails and handling many other background tasks for Pterodactyl.
 
 Create a file called `pteroq.service` in `/etc/systemd/system` with the contents below.
 
-``` text
+``` text title="/etc/systemd/system/pteroq.service"
 # Pterodactyl Queue Worker File
 # ----------------------------------
 

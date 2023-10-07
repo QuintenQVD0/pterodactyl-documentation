@@ -33,7 +33,7 @@ WORKDIR /home/container
 
 COPY ./entrypoint.sh /entrypoint.sh
 
-CMD ["/bin/bash", "/entrypoint.sh"]
+CMD ["/bin/ash", "/entrypoint.sh"]
 ```
 
 Lets walk through the `Dockerfile` above. The first thing you'll notice is the [`FROM`](https://docs.docker.com/engine/reference/builder/#from) declaration.
@@ -78,7 +78,7 @@ The `CMD` line should always point to the `entrypoint.sh` file.
 
 ```bash
 COPY ./entrypoint.sh /entrypoint.sh
-CMD ["/bin/bash", "/entrypoint.sh"]
+CMD ["/bin/ash", "/entrypoint.sh"]
 ```
 
 ## Entrypoint Script
@@ -90,14 +90,15 @@ These entrypoint files are actually fairly abstracted, and the Daemon will pass 
 variable before processing it and then executing the command.
 
 ```bash
-#!/bin/bash
+#!/bin/ash
 cd /home/container
 
-# Output Current Java Version
-java -version ## only really needed to show what version is being used. Should be changed for different applications
+# Make internal Docker IP address available to processes.
+INTERNAL_IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
+export INTERNAL_IP
 
 # Replace Startup Variables
-MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
+MODIFIED_STARTUP="eval $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')"
 echo ":/home/container$ ${MODIFIED_STARTUP}"
 
 # Run the Server
