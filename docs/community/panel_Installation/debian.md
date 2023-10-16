@@ -1,7 +1,7 @@
-# Debian 11
+# Debian 11 & 12
 
 :::tip
-This guide is based off the [official installation documentation](../../documentation/panel/getting_started.md) but is tailored specifically for Debian 11.
+This guide is based off the [official installation documentation](../../documentation/panel/getting_started.md) but is tailored specifically for Debian 11 and 12.
 :::
 
 ## Dependency Installation

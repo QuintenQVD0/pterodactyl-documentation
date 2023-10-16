@@ -124,7 +124,7 @@ If you are using a host that blocks Cloudflare DNS, you will have to use differe
 You can view what DNS Servers your host uses through a number of ways depending on how your operating system handles networking. If one of these doesn't work, try another one.
 ```bash
 # Systemd-Resolve (Ubuntu 20.04)
-systemd-resolve --status"
+systemd-resolve --status
 # Resolve-CTL (Newer Version of Ubuntu)
 resolvectl status
 # Network Manager
