@@ -61,13 +61,13 @@ const sidebars = {
       type: 'category',
       label: 'Panel Installation',
       collapsed: false,
-      items: ['community/panel_Installation/centos7', 'community/panel_Installation/centos8', 'community/panel_Installation/debian']
+      items: ['community/installation-guides/panel/centos7', 'community/installation-guides/panel/centos8', 'community/installation-guides/panel/debian']
     },
     {
       type: 'category',
       label: 'Wings Installation',
       collapsed: false,
-      items: ['community/wings_Installation/centos7', 'community/wings_Installation/centos8', 'community/wings_Installation/debian']
+      items: ['community/installation-guides/wings/centos7', 'community/installation-guides/wings/centos8', 'community/installation-guides/wings/debian']
     },
     {
       type: 'category',
