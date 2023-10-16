@@ -3,11 +3,11 @@ In this guide we will install Pterodactyl's Wings v1.X — including all of it's
 
 
 :::tip
-This guide is based off the [official installation documentation](../../documentation/wings/installing.md) but is tailored specifically for CentOS 7.
+This guide is based off the [official installation documentation](../../../documentation/wings/installing.md) but is tailored specifically for CentOS 7.
 :::
 
 ## Install Requirements
-We will first begin by installing all of Wings' [required](../../documentation/wings/installing.md#dependencies) dependencies.
+We will first begin by installing all of Wings' [required](../../../documentation/wings/installing.md#dependencies) dependencies.
 
 ### Docker
 
@@ -36,4 +36,4 @@ firewall-cmd --reload
 ```
 
 ## Installing Wings
-Great, now all of the dependencies and firewall rules have been dealt with. From here follow the [official Wings installation documentation](../../documentation/wings/installing.md#enabling-swap).
+Great, now all of the dependencies and firewall rules have been dealt with. From here follow the [official Wings installation documentation](../../../documentation/wings/installing.md#enabling-swap).

@@ -4,11 +4,11 @@ to serve it using SSL.
 
 
 :::tip
-This guide is based off the [official installation documentation](../../documentation/panel/getting_started.md) but is tailored specifically for CentOS 7.
+This guide is based off the [official installation documentation](../../../documentation/panel/getting_started.md) but is tailored specifically for CentOS 7.
 :::
 
 ## Install Requirements and Additional Utilities
-We will install all of Pterodactyl's [required](../../documentation/panel/getting_started.md#dependencies) dependencies and a few aditional utilities.
+We will install all of Pterodactyl's [required](../../../documentation/panel/getting_started.md#dependencies) dependencies and a few aditional utilities.
 
 
 :::tip
@@ -128,7 +128,7 @@ All done! If you've completed all of the above steps, your MariaDB
 installation should now be secure.
 
 #### Adding MariaDB user
-To add your first user to the database, see our tutorial on [setting up MySQL](./../../documentation/tutorials/mysql_setup.md).
+To add your first user to the database, see our tutorial on [setting up MySQL](./../../../documentation/tutorials/mysql_setup.md).
 
 ### Setup PHP
 Place the contents below in a file inside the `/etc/php-fpm.d` folder. The file can be named anything, but a good standard is `www-pterodactyl.conf`. This config will match the nginx config later in the guide.
@@ -142,7 +142,7 @@ systemctl start php-fpm
 ```
 
 ### Nginx
-Please check our [tutorial](./../../documentation/tutorials/creating_ssl_certificates.md) on generating SSL certificates for more information.
+Please check our [tutorial](./../../../documentation/tutorials/creating_ssl_certificates.md) on generating SSL certificates for more information.
 
 #### SSL Configuration
 <<< @/.snippets/webservers/nginx-centos.conf{5,11,26-27}
@@ -152,4 +152,4 @@ The default Redis install is perfectly fine for the panel. If you have Redis alr
 [running another Redis instance](https://community.pivotal.io/s/article/How-to-setup-and-run-multiple-Redis-server-instances-on-a-Linux-host).
 
 ## Installing the Panel
-Excellent, we now have all of the required dependencies installed and configured. From here, follow the [official Panel installation documentation](../../documentation/panel/getting_started.md#download-files).
+Excellent, we now have all of the required dependencies installed and configured. From here, follow the [official Panel installation documentation](../../../documentation/panel/getting_started.md#download-files).

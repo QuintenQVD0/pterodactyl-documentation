@@ -42,8 +42,8 @@ Don't forget to account for OS overhead and other software requirements on machi
 
 ## Install the Wings
 At this point you'll need to have the Daemon installed on your machine. Check out the [documentation](./../../documentation/wings/installing.md)
-for more information, or try one of the community guides for [CentOS](./../panel_Installation/centos8.md),
-[Ubuntu](./../../documentation/wings/configuration.md), or [Debian](./../panel_Installation/debian11.md).
+for more information, or try one of the community guides for [CentOS](./../installation-guides/wings/centos8.md),
+[Ubuntu](./../../documentation/wings/configuration.md), or [Debian](./../installation-guides/wings/debian.md).
 
 ## Configuring the Node
 Go to the Node Configuration page

@@ -1,7 +1,7 @@
 # Debian 11 & 12
 
 :::tip
-This guide is based off the [official installation documentation](../../documentation/panel/getting_started.md) but is tailored specifically for Debian 11 and 12.
+This guide is based off the [official installation documentation](../../../documentation/panel/getting_started.md) but is tailored specifically for Debian 11 and 12.
 :::
 
 ## Dependency Installation
@@ -50,4 +50,4 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 
 ### Download Files
 
-Great, now all of the dependencies have been dealt with. Continue the installation by following the [official documentation Download Files section](../../documentation/panel/getting_started.md#download-files).
+Great, now all of the dependencies have been dealt with. Continue the installation by following the [official documentation Download Files section](../../../documentation/panel/getting_started.md#download-files).

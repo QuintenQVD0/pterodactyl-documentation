@@ -3,11 +3,11 @@ In this guide we will install Pterodactyl's Wings v1.X — including all of it's
 
 
 :::tip
-This guide is based off the [official installation documentation](./../../documentation/wings/installing.md) but is tailored specifically for Enterprise Linux 8.
+This guide is based off the [official installation documentation](./../../../documentation/wings/installing.md) but is tailored specifically for Enterprise Linux 8.
 :::
 
 ## Install Requirements
-We will first begin by installing all of the Wings' [required](../../documentation/wings/installing.md#dependencies) dependencies.
+We will first begin by installing all of the Wings' [required](../../../documentation/wings/installing.md#dependencies) dependencies.
 
 ### Docker
 
@@ -36,7 +36,7 @@ firewall-cmd --reload
 ```
 
 ## Installing Wings
-Great, now all of the dependencies and firewall rules have been dealt with. From here follow the [official Wings installation documentation](./../../documentation/wings/installing.md#enabling-swap).
+Great, now all of the dependencies and firewall rules have been dealt with. From here follow the [official Wings installation documentation](./../../../documentation/wings/installing.md#enabling-swap).
 
 :::tip
 If you have SELinux enforcement enabled and you are getting AVC denials from your containers, try relocating your Wings data directory from `/var/lib/pterodactyl` to `/var/srv/containers/pterodactyl`. That is where the targeted policy expects Docker to read and write data from.
