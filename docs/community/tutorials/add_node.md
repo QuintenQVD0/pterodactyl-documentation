@@ -35,7 +35,7 @@ limit, with a 20% overallocation, the Panel will allocate up to 12GB of memory o
 
 :::danger
 Don't forget to account for OS overhead and other software requirements on machines.
-::: 
+:::
 
 * **Daemon Port**: the port that the Daemon should listen on.
 * **Daemon SFTP Port**: the port the Daemon sftp-server or standalone SFTP server should listen on.
