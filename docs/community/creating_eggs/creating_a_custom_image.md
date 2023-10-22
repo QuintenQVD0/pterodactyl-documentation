@@ -51,6 +51,10 @@ The next thing we do is install the dependencies we will need using Debian/Ubunt
 specific flags `-y` as the docker build is non interactive, as well as everything being contained in a
 single [`RUN`](https://docs.docker.com/engine/reference/builder/#run) block.
 
+:::warning
+The dependencie `iproute2` is required in every docker container to make the ip command work
+:::
+
 ## Files In The Docker Image
 :::warning
 Because the way that Pterodactyl works no files can be placed in the docker container in `/home/container`.
