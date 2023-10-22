@@ -125,7 +125,19 @@ printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0m%s\n" "$PARSED"
 exec env ${PARSED}
 ```
 
-The second command, `cd /home/container`, simply ensures we are in the correct directory when running the rest of the
+First we set the timezone.
+```bash
+TZ=${TZ:-UTC}
+export TZ
+```
+
+Then we make the internal ip avaible in the docker container.
+```bash
+INTERNAL_IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
+export INTERNAL_IP
+```
+
+The third command, `cd /home/container`, simply ensures we are in the correct directory when running the rest of the
 commands. We then follow that up with `java -version` to output this information to end-users, but that is not necessary.
 
 ## Modifying the Startup Command
