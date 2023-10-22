@@ -4,7 +4,6 @@ You should not edit existing services or options that ship with the Panel. Each 
 changes to these, and you'll lose any changes you've made.
 :::
 
-[[toc]]
 
 The first thing you'll need to do is create a new service. In this case, the name and description speak for themselves.
 The `Folder Name` _must be a unique name_ not being used by any other service, and should only
@@ -32,7 +31,7 @@ our [Creating a Docker Image](./creating_a_custom_image.md) guide.
 
 ## The Pterodactyl Install Procces
 
-:: warning
+::warning
 Please be aware of how the pterodactyl install proces works!
 :::
 
@@ -104,7 +103,7 @@ Avoid using this parser if possible.
 * `xml`
 
 :::tip
-If you want to use egg non stock variables in the configuration parser you mist reference them as `{{server.build.env.ENVNAME}}` or just `{{env.ENVNAME}}`. Do not forget to to replace `ENVNAME` with the actual enviroment name you have setup.
+If you want to use egg non stock variables in the configuration parser you must reference them as `{{server.build.env.ENVNAME}}` or just `{{env.ENVNAME}}`. Do not forget to to replace `ENVNAME` with the actual enviroment name you have setup.
 :::
 
 Once you have defined a parser, we then define a `find` block which tells the Daemon what specific elements to find

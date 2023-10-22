@@ -15,7 +15,7 @@ that will be used by the Daemon. Due to heavy restrictions on server containers,
 
 In most images we try to use a [Debian based OS](https://www.debian.org) as much as possible for our images.
 
-```dockerfile
+```bash
 FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:17-jdk-jammy
 
 LABEL       author="Matthew Penner" maintainer="matthew@pterodactyl.io"
