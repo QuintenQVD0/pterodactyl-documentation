@@ -31,7 +31,7 @@ our [Creating a Docker Image](./creating_a_custom_image.md) guide.
 
 ## The Pterodactyl Install Procces
 
-::warning
+:::warning
 Please be aware of how the pterodactyl install proces works!
 :::
 
