@@ -1,7 +1,5 @@
 # Creating a Custom Docker Image
 
-[[toc]]
-
 :::warning
 This tutorial uses examples from our [`yolks:java_17`](https://github.com/pterodactyl/yolks/tree/master/java/17) docker image,
 which can be found on GitHub. This tutorial also assumes some knowledge of [Docker](https://docker.io/), we suggest
