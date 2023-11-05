@@ -15,7 +15,7 @@ const Slideshow = ({ images }) => {
   }, [images.length]);
 
   return (
-    <div className="slideshow-container">
+    <div className="slideshow-container" style={{ paddingTop: '2.5rem', paddingBottom: '2.5rem' }}>
       <h2 className="slideshow-heading">Screenshots</h2>
       <Carousel
         showArrows={false}
