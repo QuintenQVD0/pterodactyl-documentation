@@ -10,6 +10,13 @@ import headerimage from './../../static/img/Pterodactyl_Header_Image.png';
 import InfoPterodactyl from '@site/src/components/InfoPterodactyl'
 import styles from './index.module.css';
 
+const titleStyle = {
+  fontSize: '5rem', // Adjust the font size as needed
+};
+const buttonStyle = {
+  margin: '2rem 0', // Add margin at the top and bottom of the button
+};
+
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -18,12 +25,14 @@ function HomepageHeader() {
       <div className="container">
         <div className={styles.headerContent}>
           <img src={headerimage} alt="Image Description" className={styles.image} />
-          <h1 className="hero__title">{siteConfig.title}</h1>
+          <h1 className="hero__title" style={titleStyle}>
+            {siteConfig.title}
+          </h1>
         </div>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="docs/documentation/panel/getting_started">
+            to="docs/documentation/panel/getting_started" style={buttonStyle}>
             Let's Get Started!
           </Link>
         </div>
