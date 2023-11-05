@@ -79,9 +79,15 @@ function Feature({Svg, title, description}) {
 }
 
 export default function HomepageFeatures() {
+
+  const sectionStyle = {
+    backgroundColor: '#10529F',
+  }
+
   return (
-    <section className={styles.features}>
+    <section className={styles.features} style={sectionStyle}>
       <div className="container">
+      <h1 className="text--center">Why Pterodactyl®</h1>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
