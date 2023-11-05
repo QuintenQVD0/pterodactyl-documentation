@@ -32,21 +32,21 @@ our [Creating a Docker Image](./creating_a_custom_image.md) guide.
 ## The Pterodactyl Install Procces
 
 :::warning
-Please be aware of how the pterodactyl install proces works!
+Please be aware of how the pterodactyl install process works!
 :::
 
 ```
 1. Spin up install container
-    Creates a new container using an install image that's run as root.
+    Creates a new container using an install image which runs as root.
     Uses a volume mount on `/mnt/server` for the server files, which is the working directory during installation.
     The volume will be later mounted as `/home/container` for the server container. Any files outside of `/mnt/server` will be gone after installation.
-    Install script can pull files or set up all that is needed to run the server, such as writing files, directories or compiling apps.
-    It is regularly used to just download the files required. Such as server files and configs.
+    The installation script can set up everything that's required to run the server, such as writing files, creating directories, or compiling apps.
+    It is regularly used to just download the files required, such as server files and configs.
     
 2. Stop and destroy install container
 
 3. Start a new container with the server files in /home/container
-    This is where the server is actually run. No root privileges.
+    This is where the server is is actually ran, without root privileges.
     Any dependencies installed during the install process are gone.
     The container that is started should have everything you need.
     No packages can be installed. Any required dependencies must exist in the used Docker image.
@@ -103,7 +103,7 @@ Avoid using this parser if possible.
 * `xml`
 
 :::tip
-If you want to use egg non stock variables in the configuration parser you must reference them as `{{server.build.env.ENVNAME}}` or just `{{env.ENVNAME}}`. Do not forget to to replace `ENVNAME` with the actual enviroment name you have setup.
+If you want to use egg non stock variables in the configuration parser you must reference them as `{{server.build.env.ENVNAME}}` or just `{{env.ENVNAME}}`. Do not forget to to replace `ENVNAME` with the actual environment name you have setup.
 :::
 
 Once you have defined a parser, we then define a `find` block which tells the Daemon what specific elements to find
@@ -143,7 +143,7 @@ docker interface defined in the configuration file using `{{config.docker.interf
 :::
 
 #### File Parser
-The file parser  the whole line that you are trying to edit. For example:
+The file parser replaces the whole line that you are trying to edit. So you have to use it like this:
 
 ```json
 {
@@ -160,7 +160,7 @@ The file parser  the whole line that you are trying to edit. For example:
 }
 ```
 
-The `"` on the right side are escaped with a `\` because else they would brake the json syntax for the parser.
+The `"` on the right side are escaped with a `\` because else they would break the json syntax for the parser.
 
 ### Start Configuration
 The last block to configure is the `Start Configuration` for servers running using this service option.
@@ -175,7 +175,7 @@ In the example block above, we define `done` as the entire line, or part of a li
 starting, and is ready for players to join. When the Daemon sees this output, it will mark the server as `ON` rather
 than `STARTING`. 
 
-If your aplication has multiple messages that mean that it is fully startup then you can also do it like this:
+If your application has multiple messages that mean that it is fully startup then you can also do it like this:
 ```json
 {
   "done":[

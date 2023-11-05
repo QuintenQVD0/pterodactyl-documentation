@@ -11,7 +11,7 @@ reading up if this all looks foreign to you.
 The most important part of this process is to create the [`Dockerfile`](https://docs.docker.com/engine/reference/builder/)
 that will be used by the Daemon. Due to heavy restrictions on server containers, you must setup this file in a specific manner.
 
-In most images we try to use a [Debian based OS](https://www.debian.org) as much as possible for our images.
+We try to use a [Debian based OS](https://www.debian.org) as much as possible for our images
 
 ```bash
 FROM        --platform=$TARGETOS/$TARGETARCH eclipse-temurin:17-jdk-jammy
@@ -47,18 +47,18 @@ In this case, we are using [`eclipse-temurin:17-jdk-jammy`](https://github.com/a
 
 The next thing we do is install the dependencies we will need using Debian/Ubuntu's package manager: `apt`. You'll notice some
 specific flags `-y` as the docker build is non interactive, as well as everything being contained in a
-single [`RUN`](https://docs.docker.com/engine/reference/builder/#run) block.
+single [`RUN`](https://docs.docker.com/engine/reference/builder/#run) block. 
 
 :::warning
-The dependencie `iproute2` is required in every docker container to make the ip command work
+The dependency `iproute2` is required in every docker container to make the ip command work
 :::
 
 ## Files In The Docker Image
 :::warning
-Because the way that Pterodactyl works no files can be placed in the docker container in `/home/container`.
+Because the way that Pterodactyl works, it is not possible to store any files within the Docker image at `/home/container`.
 :::
 
-All files must be downloaded with the egg install script, this means for example that you can not put your bot files or minecraft server jar can not be put in the image as you can with regular docker images
+All files must be downloaded with the egg install script, this means for example that you can not put your bot files or minecraft server jars in the Docker image as you can with regular docker images.
 
 ## Creating a Container User
 
@@ -66,7 +66,7 @@ Within this `RUN` block, you'll notice the `useradd` command.
 
 ```bash
  useradd -d /home/container -m container
- ```
+```
 
 :::warning
 All Pterodactyl containers must have a user named `container`, and the user home **must** be `/home/container`.
@@ -149,10 +149,10 @@ is parsing the environment `STARTUP` that is passed into the container by the Da
 looks something like the example below:
 
 ```bash
-STARTUP="java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}"
+STARTUP="java -Xms128M -XX:MaxRAMPercentage=95.0 -jar {{SERVER_JARFILE}}"
 ```
 
-:::info v-pre
+:::note v-pre
 You'll notice some placeholders there, specifically `{{SERVER_JARFILE}}`. These refer to
 other environment variables being passed in, and they look something like the example below.
 :::
@@ -168,19 +168,19 @@ configuration. However, that is not necessarily anything to worry about here.
 PARSED=$(echo "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g' | eval echo "$(cat -)")
 ```
 
-:::info v-pre
+:::note v-pre
 The command above simply evaluates the `STARTUP` environment variable, and then replaces anything surrounded in
 curly braces `{{EXAMPLE}}` with a matching environment variable (such as `EXAMPLE`). Thus, our `STARTUP` command:
 :::
 
 ```bash
-java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}
+java -Xms128M -XX:MaxRAMPercentage=95.0 -jar {{SERVER_JARFILE}}
 ```
 
 Becomes:
 
 ```bash
-java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar server.jar
+java -Xms128M -XX:MaxRAMPercentage=95.0 -jar server.jar
 ```
 
 ## Run the Command
