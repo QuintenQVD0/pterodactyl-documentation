@@ -1,25 +1,23 @@
 .btn-container {
   display: inline-block;
-  padding: 5px;
-}
-
-.btn-container + .btn-container {
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .btn-container a {
   display: inline-block;
   color: white;
   text-decoration: none;
-  background-color: transparent;
+  background-color: #10529F;
   border: 2px solid white;
   border-radius: 10px;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   outline: none;
+  font-size: 1.25rem;
 }
 
 .btn-container a:hover {
   background-color: rgba(255, 255, 255, 0.3);
   color: #10529F;
 }
+

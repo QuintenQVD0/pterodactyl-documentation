@@ -6,17 +6,20 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Slideshow from '@site/src/components/SlideShow/Slideshow';
 import GetStartedSection from '@site/src/components/GetStartedSection/GetStartedSection';
-
-
+import headerimage from './../../static/img/Pterodactyl_Header_Image.png';
+import InfoPterodactyl from '@site/src/components/InfoPterodactyl'
 import styles from './index.module.css';
+
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.headerContent}>
+          <img src={headerimage} alt="Image Description" className={styles.image} />
+          <h1 className="hero__title">{siteConfig.title}</h1>
+        </div>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -50,6 +53,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <InfoPterodactyl />
         <HomepageFeatures />
         <Slideshow images={images} />
         <GetStartedSection />
@@ -57,7 +61,4 @@ export default function Home() {
     </Layout>
   );
 }
-
-
-
 
