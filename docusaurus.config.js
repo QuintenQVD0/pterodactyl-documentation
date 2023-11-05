@@ -154,6 +154,15 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['bash', 'diff', 'json', 'nginx', 'apacheconf', 'docker', 'sql', 'yaml'],
       },
+      headTags: [
+        {
+          tagName: 'meta',
+          attributes: {
+            name: 'theme-color',
+            content: '#10529F',
+          },
+        },
+      ],
     }),
     plugins: [require.resolve('docusaurus-lunr-search')],
 };
