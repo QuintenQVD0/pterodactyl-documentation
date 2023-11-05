@@ -27,19 +27,19 @@ systemctl start mariadb
 systemctl enable mariadb
 ```
 
-### PHP 8.0
+### PHP 8.1
 We recommend the remi repo to get the latest php packages.
 
 ```bash
 ## Install Repos
 dnf install epel-release
 dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
-dnf module enable php:remi-8.0
+dnf module enable php:remi-8.1
 
 ## Get dnf updates
 dnf update -y
 
-## Install PHP 8.0
+## Install PHP 8.1
 dnf install -y php php-{common,fpm,cli,json,mysqlnd,gd,mbstring,pdo,zip,bcmath,dom,opcache}
 ```
 
