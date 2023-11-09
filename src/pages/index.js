@@ -13,6 +13,7 @@ import styles from './index.module.css';
 const titleStyle = {
   fontSize: '5rem', 
   padding: '0 1rem',
+  color: 'white',
 };
 const buttonStyle = {
   margin: '2rem 0', // Add margin at the top and bottom of the button
