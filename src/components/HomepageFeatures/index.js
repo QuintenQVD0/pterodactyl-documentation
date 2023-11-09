@@ -71,7 +71,7 @@ function Feature({Svg, title, description}) {
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <h3 style={{ color: 'white' }}>{title}</h3>
         <p style={{ color: 'white' }}>{description}</p>
       </div>
     </div>
@@ -87,7 +87,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features} style={sectionStyle}>
       <div className="container">
-      <h1 className="text--center">Why Pterodactyl®</h1>
+      <h1 className="text--center" style={{ color: 'white' }}>Why Pterodactyl®</h1>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
