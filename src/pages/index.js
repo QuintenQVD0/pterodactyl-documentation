@@ -11,7 +11,8 @@ import InfoPterodactyl from '@site/src/components/InfoPterodactyl'
 import styles from './index.module.css';
 
 const titleStyle = {
-  fontSize: '5rem', // Adjust the font size as needed
+  fontSize: '5rem', 
+  padding: '0 1rem',
 };
 const buttonStyle = {
   margin: '2rem 0', // Add margin at the top and bottom of the button
