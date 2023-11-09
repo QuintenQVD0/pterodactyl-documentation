@@ -99,12 +99,12 @@ const config = {
         ],
       },
       announcementBar: {
-        id: 'announcementBar-3',
+        id: 'announcementBar',
         content:
-          'Stand with Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://www.savethechildren.org/us/where-we-work/ukraine">Donate</a> <a target="_blank" rel="noopener noreferrer" href="https://razomforukraine.org/">Today</a>',
+          '<b> Stand with Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://www.savethechildren.org/us/where-we-work/ukraine">Donate</a> <a target="_blank" rel="noopener noreferrer" href="https://razomforukraine.org/">Today</a></b>',
         //backgroundColor: '#fafbfc',
         //textColor: '#091E42',
-        //isCloseable: false,
+        isCloseable: false,
       },
       headTags: [
         {
