@@ -99,12 +99,12 @@ const config = {
         ],
       },
       announcementBar: {
-        id: 'support_us',
+        id: 'announcementBar-3',
         content:
-          'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
-        isCloseable: false,
+          'Stand with Ukraine 🇺🇦 <a target="_blank" rel="noopener noreferrer" href="https://www.savethechildren.org/us/where-we-work/ukraine">Donate</a> <a target="_blank" rel="noopener noreferrer" href="https://razomforukraine.org/">Today</a>',
+        //backgroundColor: '#fafbfc',
+        //textColor: '#091E42',
+        //isCloseable: false,
       },
       headTags: [
         {
