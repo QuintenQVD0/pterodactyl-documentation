@@ -11,7 +11,7 @@ const InfoPterodactyl = () => (
       <p>
         <strong>Stop settling for less. Make game servers a first-class citizen on your platform.</strong>
       </p>
-      <img src="https://cdn.pterodactyl.io/site-assets/mockup-macbook-grey-1.0.png" alt="Your Image" style={{ width: '75%' }} />
+      <img src="https://cdn.pterodactyl.io/site-assets/mockup-macbook-grey-1.0.png" alt="Your Image" style={{ maxWidth: '100%', maxHeight: '600px' }} />
     </div>
 );
 
