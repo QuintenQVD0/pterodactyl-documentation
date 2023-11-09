@@ -1,7 +1,7 @@
 import React from 'react';
 
 const InfoPterodactyl = () => (
-    <div style={{ padding: '5rem 0', textAlign: 'center', maxWidth: '40%', margin: 'auto' }}>
+    <div style={{ padding: '5rem 0', textAlign: 'center', maxWidth: '50%', margin: 'auto' }}>
       <h1>Pterodactyl Panel</h1>
       <br />
       <p style={{ wordWrap: 'break-word' }}>
@@ -11,7 +11,7 @@ const InfoPterodactyl = () => (
       <p>
         <strong>Stop settling for less. Make game servers a first-class citizen on your platform.</strong>
       </p>
-      <img src="https://cdn.pterodactyl.io/site-assets/mockup-macbook-grey-1.0.png" alt="Your Image" style={{ maxWidth: '100%', maxHeight: '600px' }} />
+      <img src="https://cdn.pterodactyl.io/site-assets/mockup-macbook-grey-1.0.png" alt="Your Image" style={{ maxWidth: '100%', maxHeight: '75%' }} />
     </div>
 );
 

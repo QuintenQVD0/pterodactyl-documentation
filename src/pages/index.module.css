@@ -39,3 +39,21 @@
   max-width: 100px; /* Adjust the image width as needed */
   margin-right: 10px; /* Add spacing between the image and title */
 }
+
+
+/* Add media query for smaller screens (adjust the max-width as needed) */
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__title {
+    margin-top: 1rem;
+  }
+
+  .buttons {
+    margin-top: 2rem;
+  }
+}
