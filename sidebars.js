@@ -28,6 +28,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Panel',
+      link: {type: 'doc', id: 'documentation/panel/index'},
       collapsed: false,
       items: ['documentation/panel/getting_started', 'documentation/panel/webserver_configuration', 'documentation/panel/additional_configuration', 'documentation/panel/updating', 'documentation/panel/troubleshooting', 'documentation/panel/legacy_upgrade'],
     },
