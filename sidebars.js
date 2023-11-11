@@ -54,6 +54,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Community Guides',
+      link: {type: 'doc', id: 'docs/community/community_guides/index'},
       collapsed: false,
       items: ['community/community_guides/about']
     },
