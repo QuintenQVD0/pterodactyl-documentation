@@ -1,3 +1,7 @@
+---
+slug: /customization/panel
+---
+
 # Building Panel Assets
 
 :::warning

@@ -1,3 +1,7 @@
+---
+slug: /community/about
+---
+
 # Community Guides and Tutorials
 
 ## About

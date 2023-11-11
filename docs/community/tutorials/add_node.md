@@ -1,3 +1,7 @@
+---
+slug: /tutorials/node
+---
+
 # Creating a New Node
 
 ## Location

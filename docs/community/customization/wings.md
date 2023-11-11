@@ -1,3 +1,7 @@
+---
+slug: /customization/wings
+---
+
 # Building Wings
 
 :::warning

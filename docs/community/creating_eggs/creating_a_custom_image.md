@@ -1,3 +1,7 @@
+---
+slug: /eggs/image
+---
+
 # Creating a Custom Docker Image
 
 :::warning

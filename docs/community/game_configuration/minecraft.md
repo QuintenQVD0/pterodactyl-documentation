@@ -1,3 +1,7 @@
+---
+slug: /games/minecraft
+---
+
 # Minecraft
 
 ## Configuring a Server Network (BungeeCord, Waterfall, HexaCord, etc.)
