@@ -8,7 +8,7 @@ const GetStartedSection = () => (
       <p style={{ marginTop: '1rem', fontSize: '1rem' }}>Ready to fly on the Pterodactyl?</p>
       <div style={{ marginTop: '2rem' }}>
         <span className="btn-container">
-          <a className="btn btn-primary rounded-full px-4 py-2" href="docs/documentation/project/introduction" style={{ color: 'white' }}>
+          <a className="btn btn-primary rounded-full px-4 py-2" href="docs/project/introduction" style={{ color: 'white' }}>
             About the project
           </a>
         </span>
