@@ -4,11 +4,6 @@ slug: /project/community
 
 # Community Standards
 
-<!--
-    Sorry, but this file is off limits to additions or deletions that are not the result of fixing
-    grammar or spelling mistakes.
--->
-
 Pterodactyl has grown from a community of tens in 2015 to a community of thousands in 2020. During that time
 there have been countless growing pains and community has changed in an innumerable number of ways. At our heart
 however, Pterodactyl continues to exist for one purpose: to be _the_ platform for running your game servers.
