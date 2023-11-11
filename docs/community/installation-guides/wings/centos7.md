@@ -1,3 +1,7 @@
+---
+slug: /wings/install/centos7
+---
+
 # CentOS 7
 In this guide we will install Pterodactyl's Wings v1.X — including all of it's dependencies — and configure it to use a SSL connection.
 

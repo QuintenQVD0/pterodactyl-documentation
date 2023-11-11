@@ -1,3 +1,7 @@
+---
+slug: /panel/install/debian
+---
+
 # Debian 11 & 12
 
 :::tip

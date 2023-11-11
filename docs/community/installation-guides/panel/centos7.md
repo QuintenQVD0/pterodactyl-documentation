@@ -1,3 +1,7 @@
+---
+slug: /panel/install/centos7
+---
+
 # CentOS 7
 In this guide we will install Pterodactyl v1.X — including all of it's dependencies — and configure our webserver
 to serve it using SSL.

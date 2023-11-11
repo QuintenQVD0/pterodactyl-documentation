@@ -1,3 +1,7 @@
+---
+slug: /panel/install/centos8
+---
+
 # CentOS 8, Rocky Linux 8, AlmaLinux 8
 In this guide we will install Pterodactyl v1.X — including all of it's dependencies — and configure our webserver to serve it using SSL.
 
