@@ -1,5 +1,5 @@
 ---
-slug: /tutorials/node
+slug: /community/tutorials/node
 ---
 
 # Creating a New Node

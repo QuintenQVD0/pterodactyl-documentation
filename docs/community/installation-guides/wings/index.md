@@ -1,8 +1,8 @@
 ---
-slug: /community
+slug: /community/wings
 ---
 
-# Community Guides
+# CWings Installation
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

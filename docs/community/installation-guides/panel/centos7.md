@@ -1,5 +1,5 @@
 ---
-slug: /panel/install/centos7
+slug: /community/panel/install/centos7
 ---
 
 # CentOS 7

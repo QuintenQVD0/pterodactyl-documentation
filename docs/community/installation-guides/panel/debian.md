@@ -1,5 +1,5 @@
 ---
-slug: /panel/install/debian
+slug: /community/panel/install/debian
 ---
 
 # Debian 11 & 12

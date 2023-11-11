@@ -1,8 +1,8 @@
 ---
-slug: /community
+slug: /games
 ---
 
-# Community Guides
+# Game Configuration
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

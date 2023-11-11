@@ -1,8 +1,8 @@
 ---
-slug: /community
+slug: /eggs
 ---
 
-# Community Guides
+# Creating Eggs
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

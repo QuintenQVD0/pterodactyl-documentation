@@ -1,5 +1,5 @@
 ---
-slug: /tutorials/artisan
+slug: /community/tutorials/artisan
 ---
 
 # Artisan CLI

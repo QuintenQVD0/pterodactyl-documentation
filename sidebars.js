@@ -22,6 +22,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Project Information',
+      link: {type: 'doc', id: 'documentation/project/index'},
       collapsed: false,
       items: ['documentation/project/introduction', 'documentation/project/about', 'documentation/project/terms', 'documentation/project/community'],
     },
@@ -35,18 +36,21 @@ const sidebars = {
     {
       type: 'category',
       label: 'Wings',
+      link: {type: 'doc', id: 'documentation/wings/index'},
       collapsed: false,
       items: ['documentation/wings/installing', 'documentation/wings/upgrading', 'documentation/wings/migrating', 'documentation/wings/configuration']
     },
     {
       type: 'category',
       label: 'Tutorials',
+      link: {type: 'doc', id: 'documentation/tutorials/index'},
       collapsed: false,
       items: ['documentation/tutorials/mysql_setup', 'documentation/tutorials/creating_ssl_certificates']
     },
     {
       type: 'category',
       label: 'Guides',
+      link: {type: 'doc', id: 'documentation/guides/index'},
       collapsed: false,
       items: ['documentation/guides/mounts', 'documentation/guides/php_upgrade']
     }
@@ -62,36 +66,42 @@ const sidebars = {
     {
       type: 'category',
       label: 'Panel Installation',
+      link: {type: 'doc', id: 'community/installation-guides/panel/index'},
       collapsed: false,
       items: ['community/installation-guides/panel/centos7', 'community/installation-guides/panel/centos8', 'community/installation-guides/panel/debian']
     },
     {
       type: 'category',
       label: 'Wings Installation',
+      link: {type: 'doc', id: 'community/installation-guides/wings/index'},
       collapsed: false,
       items: ['community/installation-guides/wings/centos7', 'community/installation-guides/wings/centos8', 'community/installation-guides/wings/debian']
     },
     {
       type: 'category',
       label: 'Creating Eggs',
+      link: {type: 'doc', id: 'community/creating_eggs/index'},
       collapsed: false,
       items: ['community/creating_eggs/creating_a_custom_egg', 'community/creating_eggs/creating_a_custom_image']
     },
     {
       type: 'category',
       label: 'Game Configuration',
+      link: {type: 'doc', id: 'community/game_configuration/index'},
       collapsed: false,
       items: ['community/game_configuration/minecraft']
     },
     {
       type: 'category',
       label: 'Tutorials',
+      link: {type: 'doc', id: 'community/tutorials/index'},
       collapsed: false,
       items: ['community/tutorials/add_node', 'community/tutorials/artisan']
     },
     {
       type: 'category',
       label: 'Customization',
+      link: {type: 'doc', id: 'community/customization/index'},
       collapsed: false,
       items: ['community/customization/panel', 'community/customization/wings']
     },

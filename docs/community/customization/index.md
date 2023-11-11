@@ -1,8 +1,8 @@
 ---
-slug: /community
+slug: /customization
 ---
 
-# Community Guides
+# Customization
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

@@ -1,8 +1,8 @@
 ---
-slug: /community
+slug: /community/panel
 ---
 
-# Community Guides
+# Panel Installation
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

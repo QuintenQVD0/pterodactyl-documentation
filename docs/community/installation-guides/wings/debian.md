@@ -1,5 +1,5 @@
 ---
-slug: /wings/install/debian
+slug: /community/wings/install/debian
 ---
 
 # Debian 11 & 12

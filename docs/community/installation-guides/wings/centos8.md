@@ -1,5 +1,5 @@
 ---
-slug: /wings/install/centos8
+slug: /community/wings/install/centos8
 ---
 
 # CentOS 8, Rocky Linux 8, AlmaLinux 8

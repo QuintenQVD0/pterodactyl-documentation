@@ -1,8 +1,8 @@
 ---
-slug: /community
+slug: /guides
 ---
 
-# Community Guides
+# Guides
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />

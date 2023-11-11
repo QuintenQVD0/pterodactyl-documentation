@@ -1,5 +1,5 @@
 ---
-slug: /wings/install/centos7
+slug: /community/wings/install/centos7
 ---
 
 # CentOS 7
