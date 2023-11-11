@@ -1,5 +1,5 @@
 ---
-slug: /panel/community_install/centos8
+slug: /panel/install/centos8
 ---
 
 # CentOS 8, Rocky Linux 8, AlmaLinux 8
