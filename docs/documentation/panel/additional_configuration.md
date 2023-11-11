@@ -1,3 +1,7 @@
+---
+slug: /panel/configuration
+---
+
 # Additional Configuration
 
 

@@ -1,3 +1,7 @@
+---
+slug: /project/mysql
+---
+
 # Setting up MySQL
 
 

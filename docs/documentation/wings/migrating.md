@@ -1,3 +1,7 @@
+---
+slug: /wings/migrating
+---
+
 # Migrating to Wings
 This guide is for people looking to migrate from the old Node.JS daemon to Wings. Please see the
 [install guide](./installing.md) if you are trying to install Wings for the first time on

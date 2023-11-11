@@ -1,3 +1,7 @@
+---
+slug: /wings/install
+---
+
 # Installing Wings
 
 Wings is the next generation server control plane from Pterodactyl. It has been rebuilt from the

@@ -1,3 +1,7 @@
+---
+slug: /project/community
+---
+
 # Community Standards
 
 <!--

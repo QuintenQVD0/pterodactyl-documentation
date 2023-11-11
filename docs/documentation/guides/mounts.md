@@ -1,3 +1,7 @@
+---
+slug: /guides/mounts
+---
+
 # Using Mounts
 
 Mounts is a feature that allows administrators to mount other directories from the host file-system into a Server's container.

@@ -1,3 +1,7 @@
+---
+slug: /guides/php_upgrade
+---
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

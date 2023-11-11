@@ -1,3 +1,7 @@
+---
+slug: /panel/legacy_upgrade
+---
+
 # Legacy Upgrades
 This upgrade guide is for **upgrading from 0.7.X to 1.3.x**. If you are trying to do an upgrade on a 1.X Panel
 please [use this guide instead](../panel/updating.md). During this upgrade process you will have some periods

@@ -1,3 +1,7 @@
+---
+slug: /panel/updating
+---
+
 # Updating the Panel
 
 This documentation covers the process for updating within the `1.x` series of releases. This means updating from
