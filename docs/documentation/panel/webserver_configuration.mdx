@@ -106,7 +106,7 @@ sudo systemctl restart nginx
   <TabItem value="Nginx Without SSL" label="Nginx Without SSL">
 First, remove the default NGINX configuration.
 
-``` bash
+```bash
 rm /etc/nginx/sites-enabled/default
 ```
 Now, you should paste the contents of the file below, replacing `<domain>` with your domain name being used in a file called
@@ -176,7 +176,7 @@ sudo systemctl restart nginx
   <TabItem value="Apache With SSL" label="Apache With SSL">
 First, remove the default Apache configuration.
 
-``` bash
+```bash
 a2dissite 000-default.conf
 ```
 
@@ -230,7 +230,7 @@ sudo systemctl restart apache2
    <TabItem value="Apache Without SSL" label="Apache Without SSL">
 First, remove the default Apache configuration.
 
-``` bash
+```bash
 a2dissite 000-default.conf
 ```
 

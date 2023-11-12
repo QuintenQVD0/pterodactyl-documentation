@@ -9,7 +9,7 @@ slug: /panel/troubleshooting
 If you ever encounter an unexpected error with the Panel the first thing you will likely be asked for is the logs.
 To retrieve these, simply execute the command below which will output the last 100 lines of the Panel's log file.
 
-``` bash
+```bash
 tail -n 100 /var/www/pterodactyl/storage/logs/laravel-$(date +%F).log
 ```
 
@@ -54,7 +54,7 @@ being thrown when the Panel can't connect to the Daemon.
 If you're trying to go through a bunch of errors quickly, you can use the command below which will limit the results returned to only
 be the actual error lines, without all of the stack traces.
 
-``` bash
+```bash
 tail -n 1000 /var/www/pterodactyl/storage/logs/laravel-$(date +%F).log | grep "\[$(date +%Y)"
 ```
 
@@ -110,13 +110,13 @@ to the daemon to perform actions. These issues can generally be resolved by exec
 these programs to work with SELinux.
  
 ### Redis Permissions Errors
-``` bash
+```bash
 audit2allow -a -M redis_t
 semodule -i redis_t.pp
 ```
 
 ### Wings Connection Errors
-``` bash
+```bash
 audit2allow -a -M http_port_t
 semodule -i http_port_t.pp
 ```

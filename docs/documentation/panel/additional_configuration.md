@@ -162,7 +162,7 @@ UPDATE panel.settings SET value = 0 WHERE `key` = 'settings::pterodactyl:auth:2f
 
 Run the following command in your `/var/www/pterodactyl` directory.
 
-``` bash
+```bash
 php artisan p:user:disable2fa
 ```
 

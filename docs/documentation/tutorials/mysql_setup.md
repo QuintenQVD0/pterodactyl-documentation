@@ -31,7 +31,7 @@ Next, we will create a user called `pterodactyl` and allow logins from localhost
 to our database. You can also use `%` as a wildcard or enter a numeric IP. We will also set the account password
 to `somePassword`.
 
-``` sql
+```sql
 # Remember to change 'somePassword' below to be a unique password specific to this account.
 CREATE USER 'pterodactyl'@'127.0.0.1' IDENTIFIED BY 'somePassword';
 ```
@@ -40,7 +40,7 @@ CREATE USER 'pterodactyl'@'127.0.0.1' IDENTIFIED BY 'somePassword';
 Next, we need to create a database for the panel. In this tutorial we will be naming the database `panel`, but you can
 substitute that for whatever name you wish.
 
-``` sql
+```sql
 CREATE DATABASE panel;
 ```
 
@@ -48,7 +48,7 @@ CREATE DATABASE panel;
 Finally, we need to tell MySQL that our pterodactyl user should have access to the panel database. To do this, simply
 run the command below.
 
-``` sql
+```sql
 GRANT ALL PRIVILEGES ON panel.* TO 'pterodactyl'@'127.0.0.1';
 ```
 

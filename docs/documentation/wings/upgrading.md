@@ -34,7 +34,7 @@ most cases your base Wings version should match that of your Panel.
 First, download the updated wings binary into `/usr/local/bin`. You will need to stop Wings briefly. _Your running
 servers **will not** be affected._
 
-``` bash
+```bash
 systemctl stop wings
 curl -L -o /usr/local/bin/wings "https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_$([[ "$(uname -m)" == "x86_64" ]] && echo "amd64" || echo "arm64")"
 chmod u+x /usr/local/bin/wings
@@ -45,6 +45,6 @@ chmod u+x /usr/local/bin/wings
 Finally, restart the wings process. Your running servers will not be affected and any open
 connections to the instance will re-connect automatically.
 
-``` bash
+```bash
 systemctl restart wings
 ```

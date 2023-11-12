@@ -48,7 +48,7 @@ apt install -y mariadb-server nginx tar unzip git redis-server
 Composer is a dependency manager for PHP that allows us to ship everything you'll need code wise to operate the Panel. You'll
 need composer installed before continuing in this process.
 
-``` bash
+```bash
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 ```
 

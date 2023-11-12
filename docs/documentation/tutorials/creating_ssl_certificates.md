@@ -16,7 +16,7 @@ easier creation of them. The command below is for Ubuntu distributions, but you 
 site](https://certbot.eff.org/) for installation instructions. We have also included a command below to install certbot's
 Nginx/Apache plugin so you won't have to stop your webserver.
 
-``` bash
+```bash
 sudo apt update
 sudo apt install -y certbot
 # Run this if you use Nginx
@@ -41,7 +41,7 @@ applied assuming that you've already configured the webservers to use SSL as ins
 
 HTTP challenge requires you to expose port 80 for the challenge verification.
 
-``` bash
+```bash
 # Nginx
 certbot certonly --nginx -d example.com
 # Apache
@@ -68,7 +68,7 @@ Deploy hook would restart the Nginx service to apply a new certificate when it's
 For advanced users, we suggest installing and using [acme.sh](https://acme.sh)
 which provides more options, and is much more powerful than certbot.
 
-``` text
+```text
 0 23 * * * certbot renew --quiet --deploy-hook "systemctl restart nginx"
 ```
 
@@ -105,7 +105,7 @@ systemctl restart wings
   <TabItem value="Method 2: acme.sh" label="Method 2: acme.sh">
 This is for advanced users, whose server systems do not have access to port 80. The command below is for Ubuntu distributions and CloudFlare API (you may google for other APIs for other DNS providers), but you can always check [acme.sh's official site](https://github.com/Neilpang/acme.sh) for installation instructions.
 
-``` bash
+```bash
 curl https://get.acme.sh | sh
 ```
 

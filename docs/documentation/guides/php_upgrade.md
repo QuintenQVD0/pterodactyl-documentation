@@ -49,7 +49,7 @@ is most likely called `pterodactyl.conf` and located in the `/etc/nginx/sites-av
 
 Make sure to update the path in the command below to reflect the actual location of your configuration file.
 
-``` bash
+```bash
 sed -i -e 's/php[7|8].[0-9]-fpm.sock/php8.1-fpm.sock/' /etc/nginx/sites-available/pterodactyl.conf
 ```
 
@@ -62,7 +62,7 @@ systemctl reload nginx
   <TabItem value="Apache" label="Apache">
 Run the commands below to disable all previous PHP versions and enable PHP 8.1 when serving requests.
 
-``` bash
+```bash
 # Hint: a2dismod = a2_disable_module 🤯
 a2dismod php*
 

@@ -75,7 +75,7 @@ This can be set like below.
 
 ```json
 {}
-``` 
+```
 
 ### Configuration Files
 The next block is one of the most complex blocks, the `Configuration Files` descriptor. The Daemon will process this

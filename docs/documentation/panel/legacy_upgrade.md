@@ -11,7 +11,7 @@ of Panel unavailability, however none of the underlying game server instances wi
 You'll want to put your Panel into maintenance mode by running the `down` command below before starting. This
 will prevent users from accessing the Panel during a period where things will be broken or not working correctly. Make sure that you're in the `/var/www/pterodactyl` directory when executing the command.
 
-``` bash
+```bash
 # Put the Panel into maintenance mode and deny user access
 php artisan down
 ```
@@ -49,7 +49,7 @@ into your current folder.
 We will also be deleting the `app/` directory. Because of the way we handle installations and upgrades deleted files
 are not always detected properly, so simply uppacking over this location will result in some confusing behavior.
 
-``` bash
+```bash
 # Delete the app directory to ensure we start with a clean slate here. This will not affect any
 # of your settings or servers.
 curl -L -o panel.tar.gz https://github.com/pterodactyl/panel/releases/latest/download/panel.tar.gz
@@ -62,7 +62,7 @@ tar -xzvf panel.tar.gz && rm -f panel.tar.gz
 Once all of the files are downloaded we need to set the correct permissions on the cache and storage directories to avoid
 any webserver related errors.
 
-``` bash
+```bash
 chmod -R 755 storage/* bootstrap/cache
 ```
 
@@ -70,7 +70,7 @@ chmod -R 755 storage/* bootstrap/cache
 After you've downloaded all of the new files you will need to upgrade the core components of the panel. To do this,
 simply run the commands below and follow any prompts.
 
-``` bash
+```bash
 composer install --no-dev --optimize-autoloader
 ```
 
@@ -78,7 +78,7 @@ composer install --no-dev --optimize-autoloader
 You'll also want to clear the compiled template cache to ensure that new and modified templates show up correctly for
 users.
 
-``` bash
+```bash
 php artisan view:clear
 php artisan config:clear
 ```
@@ -93,7 +93,7 @@ If you used a custom plugin that allowed for server transfers on `0.7` you **MUS
 before continuing.
 :::
 
-``` bash
+```bash
 php artisan migrate --force
 php artisan db:seed --force
 ```
@@ -102,7 +102,7 @@ php artisan db:seed --force
 The last step is to set the proper owner of the files to be the user that runs your webserver. In most cases this
 is `www-data` but can vary from system to system &mdash; sometimes being `nginx`, `apache`, or even `nobody`.
 
-``` bash
+```bash
 # If using NGINX or Apache (not on CentOS):
 chown -R www-data:www-data *
 
@@ -116,7 +116,7 @@ chown -R apache:apache *
 ## Restarting Queue Workers
 After _every_ update you should restart the queue worker to ensure that the new code is loaded in and used.
 
-``` bash
+```bash
 php artisan queue:restart
 ```
 

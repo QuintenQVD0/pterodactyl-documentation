@@ -67,7 +67,7 @@ The following commands will allow any server on the node to access the opened po
 
 Allow access to the pterodactyl pterodactyl0 network on a specific port.
 
-``` bash
+```bash
 ufw allow in on pterodactyl0 to 172.18.0.1 port <LOCALHOST_PORT> proto tcp
 ```
 
@@ -79,6 +79,6 @@ Allow access to pterodactyl0 from the pterodactyl0 network.
 This command will allow any server to access all other servers as well as all ports on the node.
 :::
 
-``` bash
+```bash
 firewall-cmd --permanent --zone=public --add-source=172.18.0.1
 ```

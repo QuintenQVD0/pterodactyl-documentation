@@ -19,7 +19,7 @@ so your users should not notice anything out of the ordinary.
 The first step for installing the daemon is to make sure we have the required directory structure setup. To do so,
 run the commands below which will create the base directory and download the wings executable.
 
-``` bash
+```bash
 mkdir -p /etc/pterodactyl
 curl -L -o /usr/local/bin/wings https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_amd64
 chmod u+x /usr/local/bin/wings
