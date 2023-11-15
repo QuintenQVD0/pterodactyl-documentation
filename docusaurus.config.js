@@ -174,7 +174,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ['bash', 'diff', 'json', 'nginx', 'apacheconf', 'docker', 'sql', 'yaml'],
+        additionalLanguages: ['bash', 'diff', 'json', 'nginx', 'apacheconf', 'docker', 'sql', 'yaml', 'ini'],
       },
     }),
     plugins: [require.resolve('docusaurus-lunr-search')],

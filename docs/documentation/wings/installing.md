@@ -94,7 +94,7 @@ sure the line includes `swapaccount=1` somewhere inside the double-quotes.
 After that, run `sudo update-grub` followed by `sudo reboot` to restart the server and have swap enabled.
 Below is an example of what the line should look like, _do not copy this line verbatim. It often has additional OS-specific parameters._
 
-```text
+```ini
 GRUB_CMDLINE_LINUX_DEFAULT="swapaccount=1"
 ```
 
@@ -148,7 +148,7 @@ You may optionally add the `--debug` flag to run Wings in debug mode.
 Running Wings in the background is a simple task, just make sure that it runs without errors before doing
 this. Place the contents below in a file called `wings.service` in the `/etc/systemd/system` directory.
 
-```text title="/etc/systemd/system/wings.service"
+```ini title="/etc/systemd/system/wings.service"
 [Unit]
 Description=Pterodactyl Wings Daemon
 After=docker.service

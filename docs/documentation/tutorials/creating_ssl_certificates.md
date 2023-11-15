@@ -68,7 +68,7 @@ Deploy hook would restart the Nginx service to apply a new certificate when it's
 For advanced users, we suggest installing and using [acme.sh](https://acme.sh)
 which provides more options, and is much more powerful than certbot.
 
-```text
+```ini
 0 23 * * * certbot renew --quiet --deploy-hook "systemctl restart nginx"
 ```
 

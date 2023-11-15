@@ -288,7 +288,7 @@ what we are doing and why.
 Telemetry is enabled by default, if you want to enable it after disabling it, edit your `.env` file
 and either remove the `PTERODACTYL_TELEMETRY_ENABLED` line, or set it to `true`.
 
-```text
+```ini
 PTERODACTYL_TELEMETRY_ENABLED=true
 ```
 
@@ -299,7 +299,7 @@ the `--telemetry` flag for a non-interactive setup.
 
 To disable telemetry, edit your `.env` file and set `PTERODACTYL_TELEMETRY_ENABLED` to `false`.
 
-```text
+```ini
 PTERODACTYL_TELEMETRY_ENABLED=false
 ```
 
