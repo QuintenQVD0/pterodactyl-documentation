@@ -1,3 +1,10 @@
+/*
+Aloglia DocSearch Adapter for Lunr.js
+====================================
+Written by:  Praveen N
+github: praveenn77
+*/
+
 import lunr from "@generated/lunr.client";
 lunr.tokenizer.separator = /[\s\-/]+/;
 
@@ -27,6 +34,7 @@ class LunrSearchAdapter {
                 lvl1: doc.type === 0 ? null : doc.title
             },
             url: doc.url,
+            version: doc.version,
             _snippetResult: formattedContent ? {
                 content: {
                     value: formattedContent,
