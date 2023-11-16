@@ -48,7 +48,7 @@ will be the only supported version in 1.11.4 and beyond.
 should see an output similar to the result below. If you do not see at least PHP 8.1 and Composer 2, you will need to upgrade by following
 our [PHP Upgrade Guide](./../guides/php_upgrade.md) and return to this documentation afterward.
 
-```
+```bash
 vagrant@pterodactyl:~/app$ php -v
 PHP 8.1.5 (cli) (built: Apr 21 2022 10:32:13) (NTS)
 Copyright (c) The PHP Group

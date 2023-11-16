@@ -19,7 +19,7 @@ this is simply a stacktrace leading to the cause of the error, and you can actua
 looking for the cause of the error. Lets take a look at some example output below, which has been truncated to
 make this easier to follow with.
 
-```
+```txt
 #70 /srv/www/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(116): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #71 /srv/www/public/index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #72 {main}
@@ -40,7 +40,7 @@ above for example. This line will be the human readable exception that you can u
 ### Understanding the Error
 In the example above we can see that the actual error was:
 
-```
+```txt
 local.ERROR: ErrorException: file_put_contents(...): failed to open stream: Permission denied in /srv/www/vendor/laravel/framework/src/Illuminate/Filesystem/Filesystem.php:122
 ```
 
@@ -142,7 +142,7 @@ If this returns different DNS Servers than 1.1.1.1 and 1.0.0.1 you'll need to ed
 ## FirewallD issues
 If you are on a RHEL/CentOS server with `firewalld` installed you may have broken DNS.
 
-```
+```bash
 firewall-cmd --permanent --zone=trusted --change-interface=pterodactyl0
 firewall-cmd --reload
 ```

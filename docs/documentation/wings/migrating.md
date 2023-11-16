@@ -75,7 +75,7 @@ rm /etc/systemd/system/pterosftp.service
 You'll then need to edit your existing `systemd` service file for Wings to point to the new control software. To do
 this, open `/etc/systemd/system/wings.service` and replace the entire contents of the file with the following:
 
-```
+```ini title="/etc/systemd/system/wings.service"
 [Unit]
 Description=Pterodactyl Wings Daemon
 After=docker.service
@@ -95,7 +95,7 @@ WantedBy=multi-user.target
 
 Then, start wings.
 
-```
+```bash
 systemctl daemon-reload
 systemctl enable --now wings
 ```
@@ -104,7 +104,7 @@ systemctl enable --now wings
 If you encounter issues starting Wings at this point, run the following command to start Wings directly and check
 for any specific error output.
 
-```
+```bash
 sudo wings --debug
 ```
 :::

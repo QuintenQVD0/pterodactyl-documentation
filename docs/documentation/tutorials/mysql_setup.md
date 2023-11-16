@@ -76,7 +76,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'pterodactyluser'@'127.0.0.1' WITH GRANT OPTION;
 Chances are you'll need to allow external access to this MySQL instance in order to allow servers to connect to it. To do this, open `my.cnf`, which varies in location depending on your OS and how MySQL was installed. You can type `find /etc -iname my.cnf` to locate it.
 
 Open `my.cnf`, add text below to the bottom of the file and save it:
-```
+```ini
 [mysqld]
 bind-address=0.0.0.0
 ```

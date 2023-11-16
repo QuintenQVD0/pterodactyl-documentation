@@ -43,13 +43,13 @@ mv /usr/local/bin/wings /usr/local/bin/wings-backup
 
 2. Place the new binary in `/usr/local/bin`
 
-```
+```bash
 cp ./wings /usr/local/bin
 ```
 
 3. Restart wings 
 
-```
+```bash
 systemctl restart wings
 ```
 
@@ -57,13 +57,13 @@ systemctl restart wings
 
 If the wings service does not start properly, you can try to start Wings in a console window.
 
-```
+```bash
 wings --debug
 ```
 
 Remember to stop the system service before, and re-enable it afterwards.
 
-```
+```bash
 systemctl stop wings
 
 systemctl start wings
