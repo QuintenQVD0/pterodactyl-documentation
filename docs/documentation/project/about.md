@@ -1,7 +1,6 @@
 ---
 slug: /project/about
-title: The Core Project
-hide_title: true
+description: About Us And The Community
 ---
 
 # About

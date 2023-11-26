@@ -1,7 +1,6 @@
 ---
 slug: /project/introduction
-title: Project Introduction
-hide_title: true
+description: Pterodactyl Introduction
 ---
 
 # Introduction

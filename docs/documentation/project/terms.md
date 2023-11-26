@@ -1,7 +1,6 @@
 ---
 slug: /project/terms
-title: Terminology
-hide_title: true
+description: Terminology Documentation
 ---
 
 # Terminology

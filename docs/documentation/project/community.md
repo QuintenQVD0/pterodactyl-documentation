@@ -1,7 +1,6 @@
 ---
 slug: /project/community
-title: Community and rules
-hide_title: true
+description: Community Standards And Guidelines
 ---
 
 # Community Standards
