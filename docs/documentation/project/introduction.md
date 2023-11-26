@@ -1,5 +1,7 @@
 ---
 slug: /project/introduction
+title: Project Introduction
+hide_title: true
 ---
 
 # Introduction

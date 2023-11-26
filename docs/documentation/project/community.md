@@ -1,5 +1,7 @@
 ---
 slug: /project/community
+title: Community and rules
+hide_title: true
 ---
 
 # Community Standards

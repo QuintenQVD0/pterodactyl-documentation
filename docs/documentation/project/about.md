@@ -1,5 +1,7 @@
 ---
 slug: /project/about
+title: The Core Project
+hide_title: true
 ---
 
 # About
