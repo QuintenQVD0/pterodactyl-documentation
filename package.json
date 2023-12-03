@@ -15,14 +15,14 @@
   },
   "dependencies": {
     "@algolia/client-search": "^4.20.0",
-    "@docusaurus/core": "^3.0.0",
-    "@docusaurus/mdx-loader": "^3.0.0",
-    "@docusaurus/plugin-content-docs": "^3.0.0",
-    "@docusaurus/plugin-content-pages": "^3.0.0",
+    "@docusaurus/core": "^3.0.1",
+    "@docusaurus/mdx-loader": "^3.0.1",
+    "@docusaurus/plugin-content-docs": "^3.0.1",
+    "@docusaurus/plugin-content-pages": "^3.0.1",
     "@docusaurus/plugin-sitemap": "^3.0.0",
-    "@docusaurus/preset-classic": "^3.0.0",
-    "@docusaurus/tsconfig": "^3.0.0",
-    "@docusaurus/types": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.1",
+    "@docusaurus/tsconfig": "^3.0.1",
+    "@docusaurus/types": "^3.0.1",
     "@mdx-js/react": "3.0.0",
     "@quintenqvd/remark-plugin-code-snippets": "^1.0.1",
     "@types/react": "^18.2.36",
@@ -40,8 +40,8 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.0.0",
-    "@docusaurus/types": "^3.0.0"
+    "@docusaurus/module-type-aliases": "^3.0.1",
+    "@docusaurus/types": "^3.0.1"
   },
   "browserslist": {
     "production": [
