@@ -2,7 +2,6 @@
 slug: /tutorials/docker
 ---
 
-
 # Dockerized versions
 
 :::warning
@@ -138,7 +137,7 @@ docker-compose up -d
 docker create -it --name wings ghcr.io/pterodactyl/wings
 ```
 
-After the startup is complete you can follow the [normal wings setup guide](/wings/1.0/installing.md#configure) to create a new node.
+After the startup is complete you can follow the [normal wings setup guide](./../wings/installing.md#configure) to create a new node.
 
 ### Environment Variables
 There are some environment variables to configure wings, see the following table for details on each available option.
