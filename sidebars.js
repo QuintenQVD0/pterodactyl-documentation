@@ -45,7 +45,7 @@ const sidebars = {
       label: 'Tutorials',
       link: {type: 'doc', id: 'documentation/tutorials/index'},
       collapsed: false,
-      items: ['documentation/tutorials/mysql_setup', 'documentation/tutorials/creating_ssl_certificates']
+      items: ['documentation/tutorials/mysql_setup', 'documentation/tutorials/creating_ssl_certificates', 'documentation/tutorials/dockerized-version']
     },
     {
       type: 'category',
