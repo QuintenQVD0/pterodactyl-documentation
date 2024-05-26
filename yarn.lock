@@ -2094,7 +2094,7 @@
     "@docsearch/css" "3.5.2"
     algoliasearch "^4.19.1"
 
-"@docusaurus/core@3.1.1", "@docusaurus/core@^3.1.0":
+"@docusaurus/core@3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-3.1.1.tgz#29ce8df7a3d3d12ee8962d6d86133b87235ff17b"
   integrity sha512-2nQfKFcf+MLEM7JXsXwQxPOmQAR6ytKMZVSx7tVi9HEm9WtfwBH1fp6bn8Gj4zLUhjWKCLoysQ9/Wm+EZCQ4yQ==
@@ -2169,7 +2169,8 @@
     webpack-merge "^5.9.0"
     webpackbar "^5.0.2"
 
-"@docusaurus/core@3.3.2":
+
+"@docusaurus/core@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-3.3.2.tgz#67b8cd5329b32f47515ecf12eb7aa306dfc69922"
   integrity sha512-PzKMydKI3IU1LmeZQDi+ut5RSuilbXnA8QdowGeJEgU8EJjmx3rBHNT1LxQxOVqNEwpWi/csLwd9bn7rUjggPA==
@@ -2644,12 +2645,12 @@
     fs-extra "^11.1.1"
     tslib "^2.6.0"
 
-"@docusaurus/tsconfig@^3.1.0":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@docusaurus/tsconfig/-/tsconfig-3.1.1.tgz#ee2297ea94f4059b69f4b9bff238c212eede65e9"
-  integrity sha512-FTBuY3KvaHfMVBgvlPmDQ+KS9Q/bYtVftq2ugou3PgBDJoQmw2aUZ4Sg15HKqLGbfIkxoy9t6cqE4Yw1Ta8Q1A==
+"@docusaurus/tsconfig@^3.3.2":
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/@docusaurus/tsconfig/-/tsconfig-3.3.2.tgz#55c0cbe92930c6b8a071e657077a612f4265e637"
+  integrity sha512-2MQXkLoWqgOSiqFojNEq8iPtFBHGQqd1b/SQMoe+v3GgHmk/L6YTTO/hMcHhWb1hTFmbkei++IajSfD3RlZKvw==
 
-"@docusaurus/types@3.1.1", "@docusaurus/types@^3.1.0":
+"@docusaurus/types@3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.1.1.tgz#747c9dee8cf7c3b0e5ee7351bac5e9c4fdc7f259"
   integrity sha512-grBqOLnubUecgKFXN9q3uit2HFbCxTWX4Fam3ZFbMN0sWX9wOcDoA7lwdX/8AmeL20Oc4kQvWVgNrsT8bKRvzg==
@@ -2664,7 +2665,7 @@
     webpack "^5.88.1"
     webpack-merge "^5.9.0"
 
-"@docusaurus/types@3.3.2":
+"@docusaurus/types@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.3.2.tgz#0e17689512b22209a98f22ee80ac56899e94d390"
   integrity sha512-5p201S7AZhliRxTU7uMKtSsoC8mgPA9bs9b5NQg1IRdRxJfflursXNVsgc3PcMqiUTul/v1s3k3rXXFlRE890w==
