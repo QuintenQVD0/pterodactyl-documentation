@@ -2169,8 +2169,7 @@
     webpack-merge "^5.9.0"
     webpackbar "^5.0.2"
 
-
-"@docusaurus/core@^3.3.2":
+"@docusaurus/core@3.3.2", "@docusaurus/core@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-3.3.2.tgz#67b8cd5329b32f47515ecf12eb7aa306dfc69922"
   integrity sha512-PzKMydKI3IU1LmeZQDi+ut5RSuilbXnA8QdowGeJEgU8EJjmx3rBHNT1LxQxOVqNEwpWi/csLwd9bn7rUjggPA==
@@ -2342,20 +2341,6 @@
     vfile "^6.0.1"
     webpack "^5.88.1"
 
-"@docusaurus/module-type-aliases@3.1.1", "@docusaurus/module-type-aliases@^3.1.0":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.1.1.tgz#b304402b0535a13ebd4c0db1c368d2604d54d02f"
-  integrity sha512-xBJyx0TMfAfVZ9ZeIOb1awdXgR4YJMocIEzTps91rq+hJDFJgJaylDtmoRhUxkwuYmNK1GJpW95b7DLztSBJ3A==
-  dependencies:
-    "@docusaurus/react-loadable" "5.5.2"
-    "@docusaurus/types" "3.1.1"
-    "@types/history" "^4.7.11"
-    "@types/react" "*"
-    "@types/react-router-config" "*"
-    "@types/react-router-dom" "*"
-    react-helmet-async "*"
-    react-loadable "npm:@docusaurus/react-loadable@5.5.2"
-
 "@docusaurus/module-type-aliases@3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.3.2.tgz#02534449d08d080fd52dc9e046932bb600c38b01"
@@ -2368,6 +2353,20 @@
     "@types/react-router-dom" "*"
     react-helmet-async "*"
     react-loadable "npm:@docusaurus/react-loadable@6.0.0"
+
+"@docusaurus/module-type-aliases@^3.1.0":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@docusaurus/module-type-aliases/-/module-type-aliases-3.1.1.tgz#b304402b0535a13ebd4c0db1c368d2604d54d02f"
+  integrity sha512-xBJyx0TMfAfVZ9ZeIOb1awdXgR4YJMocIEzTps91rq+hJDFJgJaylDtmoRhUxkwuYmNK1GJpW95b7DLztSBJ3A==
+  dependencies:
+    "@docusaurus/react-loadable" "5.5.2"
+    "@docusaurus/types" "3.1.1"
+    "@types/history" "^4.7.11"
+    "@types/react" "*"
+    "@types/react-router-config" "*"
+    "@types/react-router-dom" "*"
+    react-helmet-async "*"
+    react-loadable "npm:@docusaurus/react-loadable@5.5.2"
 
 "@docusaurus/plugin-content-blog@3.3.2":
   version "3.3.2"
@@ -2392,7 +2391,7 @@
     utility-types "^3.10.0"
     webpack "^5.88.1"
 
-"@docusaurus/plugin-content-docs@3.3.2":
+"@docusaurus/plugin-content-docs@3.3.2", "@docusaurus/plugin-content-docs@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-3.3.2.tgz#dadfbb94acfb0b74fae12db51f425c4379e30087"
   integrity sha512-Dm1ri2VlGATTN3VGk1ZRqdRXWa1UlFubjaEL6JaxaK7IIFqN/Esjpl+Xw10R33loHcRww/H76VdEeYayaL76eg==
@@ -2405,27 +2404,6 @@
     "@docusaurus/utils" "3.3.2"
     "@docusaurus/utils-common" "3.3.2"
     "@docusaurus/utils-validation" "3.3.2"
-    "@types/react-router-config" "^5.0.7"
-    combine-promises "^1.1.0"
-    fs-extra "^11.1.1"
-    js-yaml "^4.1.0"
-    lodash "^4.17.21"
-    tslib "^2.6.0"
-    utility-types "^3.10.0"
-    webpack "^5.88.1"
-
-"@docusaurus/plugin-content-docs@^3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-3.1.1.tgz#f2eddebf351dd8dd504a2c26061165c519e1f964"
-  integrity sha512-lhFq4E874zw0UOH7ujzxnCayOyAt0f9YPVYSb9ohxrdCM8B4szxitUw9rIX4V9JLLHVoqIJb6k+lJJ1jrcGJ0A==
-  dependencies:
-    "@docusaurus/core" "3.1.1"
-    "@docusaurus/logger" "3.1.1"
-    "@docusaurus/mdx-loader" "3.1.1"
-    "@docusaurus/module-type-aliases" "3.1.1"
-    "@docusaurus/types" "3.1.1"
-    "@docusaurus/utils" "3.1.1"
-    "@docusaurus/utils-validation" "3.1.1"
     "@types/react-router-config" "^5.0.7"
     combine-promises "^1.1.0"
     fs-extra "^11.1.1"
@@ -2665,7 +2643,7 @@
     webpack "^5.88.1"
     webpack-merge "^5.9.0"
 
-"@docusaurus/types@^3.3.2":
+"@docusaurus/types@3.3.2", "@docusaurus/types@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.3.2.tgz#0e17689512b22209a98f22ee80ac56899e94d390"
   integrity sha512-5p201S7AZhliRxTU7uMKtSsoC8mgPA9bs9b5NQg1IRdRxJfflursXNVsgc3PcMqiUTul/v1s3k3rXXFlRE890w==
