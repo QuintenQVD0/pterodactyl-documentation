@@ -2169,8 +2169,7 @@
     webpack-merge "^5.9.0"
     webpackbar "^5.0.2"
 
-
-"@docusaurus/core@^3.3.2":
+"@docusaurus/core@3.3.2", "@docusaurus/core@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/core/-/core-3.3.2.tgz#67b8cd5329b32f47515ecf12eb7aa306dfc69922"
   integrity sha512-PzKMydKI3IU1LmeZQDi+ut5RSuilbXnA8QdowGeJEgU8EJjmx3rBHNT1LxQxOVqNEwpWi/csLwd9bn7rUjggPA==
@@ -2435,7 +2434,7 @@
     utility-types "^3.10.0"
     webpack "^5.88.1"
 
-"@docusaurus/plugin-content-pages@3.3.2":
+"@docusaurus/plugin-content-pages@3.3.2", "@docusaurus/plugin-content-pages@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-pages/-/plugin-content-pages-3.3.2.tgz#04fc18d1925618c1102b111b85e6376442c1b7a9"
   integrity sha512-EKc9fQn5H2+OcGER8x1aR+7URtAGWySUgULfqE/M14+rIisdrBstuEZ4lUPDRrSIexOVClML82h2fDS+GSb8Ew==
@@ -2445,20 +2444,6 @@
     "@docusaurus/types" "3.3.2"
     "@docusaurus/utils" "3.3.2"
     "@docusaurus/utils-validation" "3.3.2"
-    fs-extra "^11.1.1"
-    tslib "^2.6.0"
-    webpack "^5.88.1"
-
-"@docusaurus/plugin-content-pages@^3.1.1":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-pages/-/plugin-content-pages-3.1.1.tgz#05aec68c2abeac2140c7a16d4c5b506bf4d19fb2"
-  integrity sha512-NQHncNRAJbyLtgTim9GlEnNYsFhuCxaCNkMwikuxLTiGIPH7r/jpb7O3f3jUMYMebZZZrDq5S7om9a6rvB/YCA==
-  dependencies:
-    "@docusaurus/core" "3.1.1"
-    "@docusaurus/mdx-loader" "3.1.1"
-    "@docusaurus/types" "3.1.1"
-    "@docusaurus/utils" "3.1.1"
-    "@docusaurus/utils-validation" "3.1.1"
     fs-extra "^11.1.1"
     tslib "^2.6.0"
     webpack "^5.88.1"
@@ -2665,7 +2650,7 @@
     webpack "^5.88.1"
     webpack-merge "^5.9.0"
 
-"@docusaurus/types@^3.3.2":
+"@docusaurus/types@3.3.2", "@docusaurus/types@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/types/-/types-3.3.2.tgz#0e17689512b22209a98f22ee80ac56899e94d390"
   integrity sha512-5p201S7AZhliRxTU7uMKtSsoC8mgPA9bs9b5NQg1IRdRxJfflursXNVsgc3PcMqiUTul/v1s3k3rXXFlRE890w==
