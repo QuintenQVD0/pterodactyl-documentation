@@ -37,7 +37,7 @@
     "react-responsive-carousel": "^3.2.23",
     "search-insights": "^2.14.0",
     "trim": ">=0.0.3",
-    "typescript": "^5.4.3"
+    "typescript": "^5.5.2"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.1.0",
