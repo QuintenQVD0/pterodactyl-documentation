@@ -17,7 +17,7 @@
     "@algolia/client-search": "^4.23.1",
     "@docusaurus/core": "^3.3.2",
     "@docusaurus/mdx-loader": "^3.3.2",
-    "@docusaurus/plugin-content-docs": "^3.3.2",
+    "@docusaurus/plugin-content-docs": "^3.5.2",
     "@docusaurus/plugin-content-pages": "^3.3.2",
     "@docusaurus/plugin-sitemap": "^3.3.2",
     "@docusaurus/preset-classic": "^3.3.2",
